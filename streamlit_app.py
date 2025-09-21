@@ -59,7 +59,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_data():
     """Load and cache the datasets"""
     try:
@@ -89,11 +89,11 @@ def _map_openweather_to_category(main: str) -> str:
         return 'snowy'
     return 'cloudy'
 
-@st.cache_data(show_spinner=False)
-def fetch_live_weather(city_query: str, api_key: str):
-    """Fetch current weather from OpenWeather and return mapped category and raw payload.
+@st.cache_data(show_spinner=False, ttl=600)
+def fetch_live_weather_city(city_query: str, api_key: str):
+    """Fetch current weather by city name from OpenWeather.
 
-    Returns tuple: (category:str, details:dict) or (None, error:str)
+    Returns: (category:str, details:dict) or (None, error:str)
     """
     try:
         url = "https://api.openweathermap.org/data/2.5/weather"
@@ -105,11 +105,40 @@ def fetch_live_weather(city_query: str, api_key: str):
         category = _map_openweather_to_category(main)
         return category, {
             "source": "openweather",
+            "mode": "city",
             "main": main,
             "category": category,
             "temp_c": (data.get('main') or {}).get('temp'),
             "city": data.get('name'),
             "country": (data.get('sys') or {}).get('country'),
+        }
+    except Exception as e:
+        return None, str(e)
+
+@st.cache_data(show_spinner=False, ttl=600)
+def fetch_live_weather_coords(lat: float, lon: float, api_key: str):
+    """Fetch current weather by coordinates from OpenWeather.
+
+    Returns: (category:str, details:dict) or (None, error:str)
+    """
+    try:
+        url = "https://api.openweathermap.org/data/2.5/weather"
+        params = {"lat": lat, "lon": lon, "appid": api_key, "units": "metric"}
+        resp = requests.get(url, params=params, timeout=8)
+        resp.raise_for_status()
+        data = resp.json()
+        main = (data.get('weather') or [{}])[0].get('main', '')
+        category = _map_openweather_to_category(main)
+        return category, {
+            "source": "openweather",
+            "mode": "coords",
+            "main": main,
+            "category": category,
+            "temp_c": (data.get('main') or {}).get('temp'),
+            "city": data.get('name'),
+            "country": (data.get('sys') or {}).get('country'),
+            "lat": lat,
+            "lon": lon,
         }
     except Exception as e:
         return None, str(e)
@@ -316,25 +345,46 @@ def prediction_page(model, label_encoders, feature_columns, customers_df):
         openweather_key = st.secrets.get("OPENWEATHER_API_KEY") if hasattr(st, 'secrets') else None
         weather_details = None
         if use_live_weather and openweather_key:
-            city_query = st.text_input("City (e.g., London or London,UK)", value="London")
-            if city_query.strip():
+            method = st.radio("Weather location source:", ["City", "Coordinates"], horizontal=True)
+            if method == "City":
+                city_query = st.text_input("City (e.g., London or London,UK)", value="London")
+                if city_query.strip():
+                    with st.spinner("Fetching current weather..."):
+                        mapped, info = fetch_live_weather_city(city_query.strip(), openweather_key)
+                    if mapped:
+                        weather = mapped
+                        weather_details = info
+                        st.info(f"Live weather: {info['main']} | Category: {mapped} | Temp: {info.get('temp_c')}°C in {info.get('city')}, {info.get('country')}")
+                    else:
+                        st.warning(f"Could not fetch live weather ({info}). Falling back to manual selection.")
+                        weather = st.selectbox(
+                            "Weather Condition:",
+                            ['sunny', 'cloudy', 'rainy', 'snowy']
+                        )
+                else:
+                    weather = st.selectbox(
+                        "Weather Condition:",
+                        ['sunny', 'cloudy', 'rainy', 'snowy']
+                    )
+            else:
+                col_lat, col_lon = st.columns(2)
+                with col_lat:
+                    lat = st.number_input("Latitude", value=51.5072, format="%.6f")
+                with col_lon:
+                    lon = st.number_input("Longitude", value=-0.1276, format="%.6f")
                 with st.spinner("Fetching current weather..."):
-                    mapped, info = fetch_live_weather(city_query.strip(), openweather_key)
+                    mapped, info = fetch_live_weather_coords(lat, lon, openweather_key)
                 if mapped:
                     weather = mapped
                     weather_details = info
-                    st.info(f"Live weather: {info['main']} | Category used: {mapped} | Temp: {info.get('temp_c')}°C in {info.get('city')}, {info.get('country')}")
+                    loc_txt = f"{info.get('city')}, {info.get('country')}" if info.get('city') else f"{lat:.4f}, {lon:.4f}"
+                    st.info(f"Live weather: {info['main']} | Category: {mapped} | Temp: {info.get('temp_c')}°C at {loc_txt}")
                 else:
                     st.warning(f"Could not fetch live weather ({info}). Falling back to manual selection.")
                     weather = st.selectbox(
                         "Weather Condition:",
                         ['sunny', 'cloudy', 'rainy', 'snowy']
                     )
-            else:
-                weather = st.selectbox(
-                    "Weather Condition:",
-                    ['sunny', 'cloudy', 'rainy', 'snowy']
-                )
         else:
             if use_live_weather and not openweather_key:
                 st.warning("OPENWEATHER_API_KEY is not set in Streamlit Secrets. Using manual weather selection.")
