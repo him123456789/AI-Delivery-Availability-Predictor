@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Delivery Availability Predictor",
+    page_title="AI Delivery Availability Predictor — Created by braj pate",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -183,7 +183,7 @@ def predict_availability(model, label_encoders, feature_columns, customer_data, 
 
 def main():
     # Header
-    st.markdown('<h1 class="main-header">📦 AI Delivery Availability Predictor</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">📦 AI Delivery Availability Predictor — Created by braj pate</h1>', unsafe_allow_html=True)
     st.markdown("---")
     
     # Load data and model
