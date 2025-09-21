@@ -183,7 +183,7 @@ def predict_availability(model, label_encoders, feature_columns, customer_data, 
 
 def main():
     # Header
-    st.markdown('<h1 class="main-header">📦 AI Delivery Availability Predictor — Created by braj pate</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">📦 AI Delivery Availability Predictor — Created by Braj Patel</h1>', unsafe_allow_html=True)
     st.markdown("---")
     
     # Load data and model
