@@ -1,0 +1,39 @@
+# OS / Editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit / cache
+.streamlit/
+.cache/
+
+# Data files (keep small metadata JSON, ignore large CSVs)
+*.csv
+!customers.csv
+!dataset_metadata.json
+
+# Model artifacts
+*.pkl
+*.joblib
+
+# Generated docs
+*.pdf
+*.html
+
+# Logs
+*.log

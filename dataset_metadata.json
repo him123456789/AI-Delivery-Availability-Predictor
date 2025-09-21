@@ -1,0 +1,74 @@
+{
+  "num_customers": 1000,
+  "days_history": 365,
+  "generation_date": "2025-09-20T22:38:08.722190",
+  "customer_profiles": {
+    "working_professional": {
+      "home_weekday_morning": 0.2,
+      "home_weekday_afternoon": 0.1,
+      "home_weekday_evening": 0.8,
+      "home_weekend": 0.7,
+      "calendar_busy_prob": 0.3
+    },
+    "stay_at_home": {
+      "home_weekday_morning": 0.9,
+      "home_weekday_afternoon": 0.8,
+      "home_weekday_evening": 0.9,
+      "home_weekend": 0.9,
+      "calendar_busy_prob": 0.2
+    },
+    "student": {
+      "home_weekday_morning": 0.6,
+      "home_weekday_afternoon": 0.4,
+      "home_weekday_evening": 0.7,
+      "home_weekend": 0.8,
+      "calendar_busy_prob": 0.4
+    },
+    "retiree": {
+      "home_weekday_morning": 0.8,
+      "home_weekday_afternoon": 0.9,
+      "home_weekday_evening": 0.8,
+      "home_weekend": 0.9,
+      "calendar_busy_prob": 0.1
+    },
+    "shift_worker": {
+      "home_weekday_morning": 0.5,
+      "home_weekday_afternoon": 0.6,
+      "home_weekday_evening": 0.4,
+      "home_weekend": 0.6,
+      "calendar_busy_prob": 0.2
+    }
+  },
+  "time_windows": [
+    [
+      "06:00",
+      "09:00",
+      "morning"
+    ],
+    [
+      "09:00",
+      "12:00",
+      "late_morning"
+    ],
+    [
+      "12:00",
+      "15:00",
+      "afternoon"
+    ],
+    [
+      "15:00",
+      "18:00",
+      "late_afternoon"
+    ],
+    [
+      "18:00",
+      "21:00",
+      "evening"
+    ],
+    [
+      "21:00",
+      "23:00",
+      "night"
+    ]
+  ]
+}
