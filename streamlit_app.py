@@ -10,6 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 import warnings
 warnings.filterwarnings('ignore')
+import requests
 
 # Page configuration
 st.set_page_config(
@@ -69,6 +70,49 @@ def load_data():
     except FileNotFoundError:
         st.error("Dataset files not found. Please run generate_dataset.py first.")
         return None, None, None
+
+# ----------------------------
+# Weather utilities
+# ----------------------------
+def _map_openweather_to_category(main: str) -> str:
+    """Map OpenWeather 'main' field to our app's categories."""
+    if not main:
+        return 'sunny'
+    main = main.lower()
+    if main in ['clear']:
+        return 'sunny'
+    if main in ['clouds', 'mist', 'haze', 'fog', 'smoke', 'dust']:
+        return 'cloudy'
+    if main in ['rain', 'drizzle', 'thunderstorm']:
+        return 'rainy'
+    if main in ['snow', 'sleet']:
+        return 'snowy'
+    return 'cloudy'
+
+@st.cache_data(show_spinner=False)
+def fetch_live_weather(city_query: str, api_key: str):
+    """Fetch current weather from OpenWeather and return mapped category and raw payload.
+
+    Returns tuple: (category:str, details:dict) or (None, error:str)
+    """
+    try:
+        url = "https://api.openweathermap.org/data/2.5/weather"
+        params = {"q": city_query, "appid": api_key, "units": "metric"}
+        resp = requests.get(url, params=params, timeout=8)
+        resp.raise_for_status()
+        data = resp.json()
+        main = (data.get('weather') or [{}])[0].get('main', '')
+        category = _map_openweather_to_category(main)
+        return category, {
+            "source": "openweather",
+            "main": main,
+            "category": category,
+            "temp_c": (data.get('main') or {}).get('temp'),
+            "city": data.get('name'),
+            "country": (data.get('sys') or {}).get('country'),
+        }
+    except Exception as e:
+        return None, str(e)
 
 @st.cache_resource
 def train_model():
@@ -267,10 +311,37 @@ def prediction_page(model, label_encoders, feature_columns, customers_df):
             value=datetime.strptime("14:00", "%H:%M").time()
         )
         
-        weather = st.selectbox(
-            "Weather Condition:",
-            ['sunny', 'cloudy', 'rainy', 'snowy']
-        )
+        # Weather selection: allow live weather from OpenWeather if key provided
+        use_live_weather = st.checkbox("Use live weather (OpenWeather)", value=True)
+        openweather_key = st.secrets.get("OPENWEATHER_API_KEY") if hasattr(st, 'secrets') else None
+        weather_details = None
+        if use_live_weather and openweather_key:
+            city_query = st.text_input("City (e.g., London or London,UK)", value="London")
+            if city_query.strip():
+                with st.spinner("Fetching current weather..."):
+                    mapped, info = fetch_live_weather(city_query.strip(), openweather_key)
+                if mapped:
+                    weather = mapped
+                    weather_details = info
+                    st.info(f"Live weather: {info['main']} | Category used: {mapped} | Temp: {info.get('temp_c')}°C in {info.get('city')}, {info.get('country')}")
+                else:
+                    st.warning(f"Could not fetch live weather ({info}). Falling back to manual selection.")
+                    weather = st.selectbox(
+                        "Weather Condition:",
+                        ['sunny', 'cloudy', 'rainy', 'snowy']
+                    )
+            else:
+                weather = st.selectbox(
+                    "Weather Condition:",
+                    ['sunny', 'cloudy', 'rainy', 'snowy']
+                )
+        else:
+            if use_live_weather and not openweather_key:
+                st.warning("OPENWEATHER_API_KEY is not set in Streamlit Secrets. Using manual weather selection.")
+            weather = st.selectbox(
+                "Weather Condition:",
+                ['sunny', 'cloudy', 'rainy', 'snowy']
+            )
         
         # Convert to required format
         day_of_week = delivery_date.weekday()
