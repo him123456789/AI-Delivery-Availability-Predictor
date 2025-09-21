@@ -126,6 +126,55 @@ optimal_time = predictor.find_optimal_delivery_time(customer_data, target_date)
 print(f"Best time: {optimal_time['recommendation']}")
 ```
 
+## ☁️ Live Weather Integration
+
+This app supports live weather to improve prediction accuracy. It uses OpenWeather (primary) and WeatherAPI (fallback). The live condition is mapped to the app's categories: `sunny`, `cloudy`, `rainy`, `snowy`.
+
+### Add Secrets
+
+Create Streamlit secrets with at least one provider key:
+
+```
+OPENWEATHER_API_KEY = "your_openweather_key"
+WEATHERAPI_KEY = "your_weatherapi_key"
+
+# Optional: cache TTL (seconds, default 600)
+WEATHER_CACHE_TTL = 600
+```
+
+- Streamlit Cloud: App → Settings → Secrets → paste the TOML above
+- Local development: create `.streamlit/secrets.toml` (do NOT commit)
+
+An example file is included at `secrets_example.toml` (copy its contents into Secrets).
+
+### Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+On the "Prediction Tool" page, enable "Use live weather" and choose City or Coordinates. If secrets are set, the app shows live condition, mapped category, and temperature used in predictions.
+
+### Configuring Streamlit (optional)
+
+You can create `.streamlit/config.toml` with recommended settings. An example is provided in `streamlit_config_example.toml`:
+
+```toml
+[server]
+headless = true
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1f77b4"
+font = "sans serif"
+```
+
 ## 📈 Model Performance
 
 The AI model achieves:

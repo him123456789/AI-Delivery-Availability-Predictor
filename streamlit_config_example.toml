@@ -1,0 +1,18 @@
+# Example Streamlit configuration file
+# Copy to .streamlit/config.toml (do NOT commit secrets)
+
+[server]
+headless = true
+# Do not set port/address on Streamlit Cloud; locally you can set:
+# port = 8501
+# address = "0.0.0.0"
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1f77b4"
+font = "sans serif"
