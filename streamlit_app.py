@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Delivery Availability Predictor — Created by braj pate",
+    page_title="AI Delivery Availability Predictor — Created by Braj Patel",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded"
