@@ -394,12 +394,18 @@ def prediction_page(model, label_encoders, feature_columns, customers_df):
             ["Select existing customer", "Create custom customer"]
         )
         
+        customer_lat = None
+        customer_lon = None
         if customer_option == "Select existing customer":
             customer_id = st.selectbox(
                 "Select Customer ID:",
                 customers_df['customer_id'].tolist()
             )
-            customer_data = customers_df[customers_df['customer_id'] == customer_id].iloc[0].to_dict()
+            selected_row = customers_df[customers_df['customer_id'] == customer_id].iloc[0]
+            customer_data = selected_row.to_dict()
+            # capture coordinates if present
+            customer_lat = float(selected_row.get('latitude')) if 'latitude' in selected_row else None
+            customer_lon = float(selected_row.get('longitude')) if 'longitude' in selected_row else None
         else:
             customer_data = {
                 'customer_id': 9999,
@@ -448,6 +454,28 @@ def prediction_page(model, label_encoders, feature_columns, customers_df):
         weather_details = None
         weather = None  # ensure defined
         if use_live_weather and (openweather_key or weatherapi_key):
+            # If an existing customer has coordinates, offer to auto-use them
+            use_customer_coords = False
+            if customer_lat is not None and customer_lon is not None:
+                use_customer_coords = st.checkbox(
+                    "Use selected customer's location for weather",
+                    value=True
+                )
+            if use_customer_coords:
+                with st.spinner("Fetching current weather for customer's location..."):
+                    mapped, info = (None, None)
+                    if openweather_key:
+                        mapped, info = fetch_live_weather_coords(customer_lat, customer_lon, openweather_key, cache_bucket)
+                    if not mapped and weatherapi_key:
+                        mapped, info = fetch_weatherapi_coords(customer_lat, customer_lon, weatherapi_key, cache_bucket)
+                if mapped:
+                    weather = mapped
+                    weather_details = info
+                    loc_txt = f"{customer_data.get('city', 'Customer Location')}, {customer_data.get('region', '')}".strip(', ')
+                    st.info(f"Live weather ({info.get('source')}): {info['main']} | Category: {mapped} | Temp: {info.get('temp_c')}°C at {loc_txt}")
+                else:
+                    st.warning(f"Could not fetch live weather ({info}). Falling back to manual/other methods.")
+            
             method = st.radio("Weather location source:", ["City", "Coordinates"], horizontal=True)
             if method == "City":
                 city_query = st.text_input("Search city (e.g., London or London,UK)", value="London")
@@ -722,6 +750,35 @@ def analytics_dashboard_page(delivery_df, customers_df):
         color_continuous_scale='RdYlGn'
     )
     st.plotly_chart(fig, use_container_width=True)
+
+    # UK map of regional success (uses customers' coordinates and regions)
+    st.subheader("🗺️ UK Regional Delivery Success Map")
+    try:
+        # Merge delivery success with customer location/region
+        merged = delivery_df.merge(customers_df[['customer_id', 'region', 'latitude', 'longitude']], on='customer_id', how='left')
+        region_stats = merged.groupby('region').agg(
+            success_rate=('was_home', 'mean'),
+            lat=('latitude', 'mean'),
+            lon=('longitude', 'mean'),
+            deliveries=('was_home', 'count')
+        ).reset_index().dropna(subset=['lat', 'lon'])
+
+        fig_map = px.scatter_mapbox(
+            region_stats,
+            lat='lat', lon='lon',
+            size='deliveries',
+            color='success_rate',
+            color_continuous_scale='RdYlGn',
+            size_max=30,
+            zoom=4.5,
+            hover_name='region',
+            hover_data={'success_rate': ':.1%', 'deliveries': True, 'lat': False, 'lon': False},
+            title="Regional Delivery Success (click points)"
+        )
+        fig_map.update_layout(mapbox_style='open-street-map', height=500)
+        st.plotly_chart(fig_map, use_container_width=True)
+    except Exception as e:
+        st.warning(f"Could not render UK map: {e}")
 
 def business_insights_page(delivery_df):
     st.header("💡 Business Insights & Recommendations")
