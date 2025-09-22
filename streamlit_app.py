@@ -57,8 +57,98 @@ st.markdown("""
         border-radius: 5px;
         border: 1px solid #f5c6cb;
     }
+
+    /* Floating clock (top-right) */
+    .floating-clock {
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        z-index: 9999;
+        background: linear-gradient(135deg, rgba(31,119,180,0.95), rgba(31,119,180,0.75));
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        border: 1px solid rgba(255,255,255,0.3);
+        backdrop-filter: blur(6px);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .floating-clock .clock-icon {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .floating-clock .clock-time {
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .floating-clock .clock-date {
+        font-size: 12px;
+        opacity: 0.95;
+        white-space: nowrap;
+    }
+    @media (max-width: 768px) {
+        .floating-clock { top: 12px; right: 12px; padding: 8px 10px; }
+        .floating-clock .clock-time { font-size: 13px; }
+        .floating-clock .clock-date { font-size: 11px; }
+    }
 </style>
 """, unsafe_allow_html=True)
+
+# Clock renderer (theme-aware, optional timezone)
+def render_clock(show: bool, timezone: str = ""):
+    if not show:
+        return
+    # Add dark-mode adjustments
+    st.markdown(
+        """
+        <style>
+        @media (prefers-color-scheme: dark) {
+            .floating-clock { background: linear-gradient(135deg, rgba(31,119,180,0.75), rgba(31,119,180,0.55)); border-color: rgba(255,255,255,0.2); }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+    tz = timezone or ""
+    js_tz = ("'" + tz.replace("'", "\\'") + "'") if tz else "''"
+    template = """
+        <div class="floating-clock">
+          <span class="clock-icon">🕒</span>
+          <div>
+            <div class="clock-time" id="clock-time">--:--:--</div>
+            <div class="clock-date" id="clock-date">--, -- --- ----</div>
+          </div>
+        </div>
+        <script>
+          const _tz = {TZ_JS};
+          function updateClock() {{
+            const now = new Date();
+            const optsTime = {{ hour: '2-digit', minute: '2-digit', second: '2-digit' }};
+            const optsDate = {{ weekday: 'short', year: 'numeric', month: 'short', day: '2-digit' }};
+            if (_tz) {{ optsTime.timeZone = _tz; optsDate.timeZone = _tz; }}
+            let time, date;
+            try {{
+              time = now.toLocaleTimeString([], optsTime);
+              date = now.toLocaleDateString([], optsDate);
+            }} catch (e) {{
+              // Fallback without timezone
+              time = now.toLocaleTimeString([], {{ hour: '2-digit', minute: '2-digit', second: '2-digit' }});
+              date = now.toLocaleDateString([], {{ weekday: 'short', year: 'numeric', month: 'short', day: '2-digit' }});
+            }}
+            const t = document.getElementById('clock-time');
+            const d = document.getElementById('clock-date');
+            if (t && d) {{ t.textContent = time; d.textContent = date; }}
+          }}
+          updateClock();
+          setInterval(updateClock, 1000);
+        </script>
+    """
+    st.markdown(template.replace("{TZ_JS}", js_tz), unsafe_allow_html=True)
 
 # Safe secrets access (handles missing secrets.toml gracefully)
 def _get_secret(key: str, default=None):
@@ -365,6 +455,27 @@ def main():
     
     # Sidebar for navigation
     st.sidebar.title("🎛️ Navigation")
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### ⏱️ Clock Settings")
+    show_clock = st.sidebar.checkbox("Show Clock", value=True)
+    tz_choice = st.sidebar.selectbox(
+        "Timezone",
+        [
+            "Local (browser)",
+            "Europe/London",
+            "UTC",
+            "US/Eastern",
+            "US/Central",
+            "US/Mountain",
+            "US/Pacific",
+            "Asia/Kolkata",
+            "Asia/Dubai",
+            "Asia/Tokyo",
+            "Australia/Sydney",
+        ],
+        index=1,
+    )
+    render_clock(show_clock, "" if tz_choice.startswith("Local") else tz_choice)
     page = st.sidebar.selectbox(
         "Choose a page:",
         ["🔮 Prediction Tool", "📊 Dataset Overview", "📈 Analytics Dashboard", "💡 Business Insights"]
@@ -422,10 +533,22 @@ def prediction_page(model, label_encoders, feature_columns, customers_df):
         st.markdown("**Customer Profile:**")
         st.write(f"- **Profile:** {customer_data['profile_type'].replace('_', ' ').title()}")
         st.write(f"- **Age:** {customer_data['age']}")
-        st.write(f"- **Location:** {customer_data['location_type'].title()}")
+        st.write(f"- **Location:** {customer_data.get('city', '')} {(', ' + customer_data.get('region')) if customer_data.get('region') else ''}")
+        st.write(f"- **Area Type:** {customer_data['location_type'].title()}")
         st.write(f"- **Household Size:** {customer_data['household_size']}")
         st.write(f"- **Has Pets:** {'Yes' if customer_data['has_pets'] else 'No'}")
         st.write(f"- **Work from Home:** {'Yes' if customer_data['work_from_home'] else 'No'}")
+
+        # Mini map of selected customer's location (if coordinates available)
+        if customer_lat is not None and customer_lon is not None:
+            mm_df = pd.DataFrame({
+                'lat': [customer_lat],
+                'lon': [customer_lon],
+                'label': [customer_data.get('city', 'Customer Location')]
+            })
+            fig_loc = px.scatter_mapbox(mm_df, lat='lat', lon='lon', hover_name='label', zoom=9)
+            fig_loc.update_layout(mapbox_style='open-street-map', height=240, margin=dict(l=0,r=0,t=0,b=0))
+            st.plotly_chart(fig_loc, use_container_width=True)
     
     with col2:
         st.subheader("📅 Delivery Details")
@@ -642,16 +765,32 @@ def prediction_page(model, label_encoders, feature_columns, customers_df):
 def dataset_overview_page(customers_df, delivery_df, calendar_df):
     st.header("📊 Dataset Overview")
     
+    # Filters
+    with st.expander("Filters", expanded=True):
+        regions = sorted([r for r in customers_df.get('region', pd.Series()).dropna().unique()]) if 'region' in customers_df.columns else []
+        cities = sorted([c for c in customers_df.get('city', pd.Series()).dropna().unique()]) if 'city' in customers_df.columns else []
+        sel_regions = st.multiselect("Region(s)", regions, default=regions[:5] if regions else [])
+        sel_cities = st.multiselect("City/Cities", cities, default=[])
+    # Apply filters
+    cust_f = customers_df.copy()
+    if sel_regions:
+        cust_f = cust_f[cust_f['region'].isin(sel_regions)]
+    if sel_cities:
+        cust_f = cust_f[cust_f['city'].isin(sel_cities)]
+    # Filter deliveries and calendar by selected customers
+    deliv_f = delivery_df[delivery_df['customer_id'].isin(cust_f['customer_id'])]
+    cal_f = calendar_df[calendar_df['customer_id'].isin(cust_f['customer_id'])]
+
     # Key metrics
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric("Total Customers", f"{len(customers_df):,}")
+        st.metric("Total Customers", f"{len(cust_f):,}")
     with col2:
-        st.metric("Delivery Records", f"{len(delivery_df):,}")
+        st.metric("Delivery Records", f"{len(deliv_f):,}")
     with col3:
-        st.metric("Calendar Events", f"{len(calendar_df):,}")
+        st.metric("Calendar Events", f"{len(cal_f):,}")
     with col4:
-        st.metric("Success Rate", f"{delivery_df['was_home'].mean():.1%}")
+        st.metric("Success Rate", f"{deliv_f['was_home'].mean():.1%}")
     
     st.markdown("---")
     
@@ -660,7 +799,7 @@ def dataset_overview_page(customers_df, delivery_df, calendar_df):
     
     with col1:
         st.subheader("👥 Customer Profile Distribution")
-        profile_counts = customers_df['profile_type'].value_counts()
+        profile_counts = cust_f['profile_type'].value_counts()
         fig = px.pie(
             values=profile_counts.values,
             names=[name.replace('_', ' ').title() for name in profile_counts.index],
@@ -670,7 +809,7 @@ def dataset_overview_page(customers_df, delivery_df, calendar_df):
     
     with col2:
         st.subheader("🏠 Location Distribution")
-        location_counts = customers_df['location_type'].value_counts()
+        location_counts = cust_f['location_type'].value_counts()
         fig = px.bar(
             x=[name.title() for name in location_counts.index],
             y=location_counts.values,
@@ -683,20 +822,32 @@ def dataset_overview_page(customers_df, delivery_df, calendar_df):
     tab1, tab2, tab3 = st.tabs(["Customers", "Deliveries", "Calendar"])
     
     with tab1:
-        st.dataframe(customers_df.head(10))
+        st.dataframe(cust_f.head(10))
     
     with tab2:
-        st.dataframe(delivery_df.head(10))
+        st.dataframe(deliv_f.head(10))
     
     with tab3:
-        st.dataframe(calendar_df.head(10))
+        st.dataframe(cal_f.head(10))
 
 def analytics_dashboard_page(delivery_df, customers_df):
     st.header("📈 Analytics Dashboard")
+    # Filters
+    with st.expander("Filters", expanded=True):
+        regions = sorted([r for r in customers_df.get('region', pd.Series()).dropna().unique()]) if 'region' in customers_df.columns else []
+        cities = sorted([c for c in customers_df.get('city', pd.Series()).dropna().unique()]) if 'city' in customers_df.columns else []
+        sel_regions = st.multiselect("Region(s)", regions, default=regions[:5] if regions else [])
+        sel_cities = st.multiselect("City/Cities", cities, default=[])
+    cust_f = customers_df.copy()
+    if sel_regions:
+        cust_f = cust_f[cust_f['region'].isin(sel_regions)]
+    if sel_cities:
+        cust_f = cust_f[cust_f['city'].isin(sel_cities)]
+    deliv_f = delivery_df.merge(cust_f[['customer_id']], on='customer_id', how='inner')
     
     # Success rates by time period
     st.subheader("⏰ Success Rates by Time Period")
-    time_success = delivery_df.groupby('time_period')['was_home'].mean().sort_values(ascending=False)
+    time_success = deliv_f.groupby('time_period')['was_home'].mean().sort_values(ascending=False)
     
     fig = px.bar(
         x=[period.replace('_', ' ').title() for period in time_success.index],
@@ -712,8 +863,8 @@ def analytics_dashboard_page(delivery_df, customers_df):
     
     with col1:
         st.subheader("📅 Weekend vs Weekday")
-        delivery_df['is_weekend'] = delivery_df['day_of_week'].isin([5, 6])
-        weekend_success = delivery_df.groupby('is_weekend')['was_home'].mean()
+        deliv_f['is_weekend'] = deliv_f['day_of_week'].isin([5, 6])
+        weekend_success = deliv_f.groupby('is_weekend')['was_home'].mean()
         
         fig = px.bar(
             x=['Weekday', 'Weekend'],
@@ -724,7 +875,7 @@ def analytics_dashboard_page(delivery_df, customers_df):
     
     with col2:
         st.subheader("🌤️ Weather Impact")
-        weather_success = delivery_df.groupby('weather_condition')['was_home'].mean()
+        weather_success = deliv_f.groupby('weather_condition')['was_home'].mean()
         
         fig = px.bar(
             x=[weather.title() for weather in weather_success.index],
@@ -737,10 +888,10 @@ def analytics_dashboard_page(delivery_df, customers_df):
     st.subheader("🔥 Success Rate Heatmap (Day vs Hour)")
     
     # Create hour column
-    delivery_df['hour'] = delivery_df['time_window_start'].str.split(':').str[0].astype(int)
+    deliv_f['hour'] = deliv_f['time_window_start'].str.split(':').str[0].astype(int)
     
     # Create pivot table
-    heatmap_data = delivery_df.groupby(['day_of_week', 'hour'])['was_home'].mean().unstack(fill_value=0)
+    heatmap_data = deliv_f.groupby(['day_of_week', 'hour'])['was_home'].mean().unstack(fill_value=0)
     
     fig = px.imshow(
         heatmap_data.values,
@@ -755,7 +906,7 @@ def analytics_dashboard_page(delivery_df, customers_df):
     st.subheader("🗺️ UK Regional Delivery Success Map")
     try:
         # Merge delivery success with customer location/region
-        merged = delivery_df.merge(customers_df[['customer_id', 'region', 'latitude', 'longitude']], on='customer_id', how='left')
+        merged = deliv_f.merge(customers_df[['customer_id', 'region', 'latitude', 'longitude']], on='customer_id', how='left')
         region_stats = merged.groupby('region').agg(
             success_rate=('was_home', 'mean'),
             lat=('latitude', 'mean'),
