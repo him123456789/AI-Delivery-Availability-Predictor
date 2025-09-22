@@ -1,1001 +1,1001 @@
-customer_id,profile_type,age,location_type,household_size,has_pets,work_from_home
-1,retiree,75,rural,4,False,False
-2,retiree,77,rural,4,False,False
-3,working_professional,22,urban,3,False,True
-4,working_professional,28,urban,3,False,False
-5,student,21,suburban,5,False,False
-6,student,43,urban,3,False,False
-7,shift_worker,53,suburban,5,False,False
-8,retiree,36,suburban,2,False,False
-9,student,22,rural,1,True,False
-10,stay_at_home,28,rural,4,False,False
-11,retiree,66,urban,3,False,False
-12,retiree,50,rural,2,True,False
-13,working_professional,63,rural,3,True,True
-14,working_professional,23,rural,5,False,False
-15,retiree,77,urban,2,True,False
-16,retiree,72,urban,3,False,False
-17,working_professional,35,suburban,1,False,True
-18,working_professional,20,urban,2,False,True
-19,shift_worker,41,urban,1,True,False
-20,working_professional,39,urban,3,False,False
-21,working_professional,19,urban,4,False,False
-22,working_professional,19,suburban,2,True,False
-23,retiree,69,urban,3,True,False
-24,working_professional,33,urban,1,False,False
-25,shift_worker,54,urban,3,True,False
-26,retiree,72,rural,1,True,False
-27,student,20,suburban,4,True,False
-28,student,22,rural,4,True,False
-29,student,33,urban,3,False,False
-30,retiree,41,rural,2,True,False
-31,shift_worker,38,urban,3,False,False
-32,working_professional,19,urban,2,False,False
-33,retiree,46,rural,5,True,False
-34,retiree,66,rural,5,False,False
-35,retiree,67,rural,3,False,False
-36,working_professional,21,suburban,3,False,False
-37,retiree,79,suburban,4,False,False
-38,working_professional,47,urban,5,True,False
-39,working_professional,36,rural,3,False,True
-40,retiree,73,rural,1,False,False
-41,shift_worker,62,suburban,1,False,False
-42,retiree,74,rural,2,True,False
-43,shift_worker,25,urban,1,True,False
-44,student,42,rural,2,True,False
-45,working_professional,37,urban,5,True,True
-46,retiree,63,rural,1,True,False
-47,working_professional,52,rural,1,False,True
-48,shift_worker,39,urban,5,True,False
-49,stay_at_home,25,urban,4,False,False
-50,student,29,urban,1,False,False
-51,working_professional,36,rural,1,True,False
-52,shift_worker,65,rural,5,True,False
-53,retiree,60,suburban,2,True,False
-54,retiree,63,suburban,5,True,False
-55,shift_worker,38,suburban,5,False,False
-56,student,45,suburban,1,False,False
-57,retiree,78,rural,2,True,False
-58,working_professional,29,suburban,4,True,True
-59,stay_at_home,58,rural,4,False,False
-60,working_professional,21,suburban,1,False,True
-61,student,19,rural,5,False,False
-62,shift_worker,37,suburban,2,False,False
-63,working_professional,61,urban,4,True,False
-64,retiree,66,rural,2,True,False
-65,working_professional,47,urban,4,True,False
-66,retiree,78,urban,2,True,False
-67,stay_at_home,32,urban,3,True,False
-68,shift_worker,58,suburban,5,True,False
-69,student,60,suburban,4,False,False
-70,retiree,33,suburban,4,True,False
-71,retiree,74,rural,2,False,False
-72,working_professional,34,rural,4,True,True
-73,stay_at_home,35,rural,4,True,False
-74,working_professional,28,rural,5,True,True
-75,retiree,70,urban,1,False,False
-76,student,62,suburban,1,True,False
-77,retiree,51,suburban,4,False,False
-78,stay_at_home,36,suburban,1,True,False
-79,retiree,30,rural,3,True,False
-80,student,33,urban,1,True,False
-81,retiree,66,urban,5,False,False
-82,retiree,74,urban,1,True,False
-83,working_professional,21,urban,1,False,True
-84,stay_at_home,53,rural,3,True,False
-85,retiree,60,rural,1,True,False
-86,retiree,56,suburban,4,False,False
-87,student,29,rural,3,True,False
-88,retiree,41,rural,2,False,False
-89,retiree,40,urban,3,True,False
-90,working_professional,57,urban,5,False,True
-91,student,34,rural,3,True,False
-92,retiree,70,suburban,2,False,False
-93,shift_worker,65,rural,3,False,False
-94,working_professional,23,suburban,4,False,False
-95,retiree,54,rural,5,False,False
-96,shift_worker,37,urban,1,True,False
-97,retiree,70,suburban,3,False,False
-98,retiree,26,urban,4,False,False
-99,working_professional,23,rural,2,False,False
-100,retiree,50,suburban,2,True,False
-101,retiree,74,rural,4,True,False
-102,retiree,74,rural,2,False,False
-103,retiree,70,suburban,5,False,False
-104,retiree,74,urban,1,False,False
-105,retiree,76,urban,3,True,False
-106,working_professional,27,rural,1,True,True
-107,stay_at_home,58,rural,4,True,False
-108,retiree,68,urban,4,False,False
-109,retiree,71,rural,3,True,False
-110,stay_at_home,65,rural,3,True,False
-111,stay_at_home,28,rural,5,False,False
-112,retiree,51,rural,3,False,False
-113,retiree,67,urban,3,True,False
-114,working_professional,21,suburban,2,True,False
-115,retiree,61,rural,3,True,False
-116,stay_at_home,35,suburban,3,True,False
-117,student,31,rural,2,True,False
-118,working_professional,34,rural,3,True,True
-119,shift_worker,47,urban,3,True,False
-120,retiree,80,suburban,2,True,False
-121,retiree,41,urban,4,True,False
-122,retiree,57,suburban,2,False,False
-123,student,24,suburban,1,True,False
-124,retiree,71,suburban,4,False,False
-125,retiree,39,urban,3,True,False
-126,retiree,73,urban,2,True,False
-127,shift_worker,28,urban,3,True,False
-128,student,26,rural,4,False,False
-129,stay_at_home,43,suburban,5,True,False
-130,stay_at_home,50,urban,5,False,False
-131,shift_worker,53,suburban,4,False,False
-132,stay_at_home,63,suburban,4,True,False
-133,student,32,urban,4,False,False
-134,student,25,urban,5,False,False
-135,stay_at_home,40,suburban,1,True,False
-136,retiree,73,rural,3,True,False
-137,student,18,suburban,5,False,False
-138,stay_at_home,49,rural,2,True,False
-139,student,57,urban,2,False,False
-140,working_professional,62,rural,2,False,True
-141,working_professional,46,rural,5,True,True
-142,retiree,73,rural,5,False,False
-143,shift_worker,40,urban,5,False,False
-144,shift_worker,42,urban,5,True,False
-145,student,38,suburban,1,True,False
-146,student,41,urban,4,True,False
-147,retiree,75,urban,4,False,False
-148,retiree,76,rural,1,True,False
-149,working_professional,44,suburban,1,False,True
-150,stay_at_home,48,rural,3,True,False
-151,working_professional,43,rural,1,False,True
-152,working_professional,44,rural,5,True,False
-153,retiree,80,rural,3,False,False
-154,working_professional,22,suburban,3,False,False
-155,working_professional,62,urban,1,True,False
-156,shift_worker,31,suburban,2,False,False
-157,working_professional,59,rural,2,False,True
-158,shift_worker,46,urban,5,True,False
-159,shift_worker,64,suburban,1,False,False
-160,stay_at_home,28,urban,5,True,False
-161,retiree,28,suburban,5,False,False
-162,stay_at_home,37,urban,5,False,False
-163,stay_at_home,41,suburban,4,False,False
-164,student,20,urban,1,False,False
-165,working_professional,47,rural,2,False,False
-166,student,58,urban,5,True,False
-167,shift_worker,38,urban,5,False,False
-168,retiree,77,suburban,1,True,False
-169,student,50,rural,1,False,False
-170,retiree,67,urban,1,False,False
-171,working_professional,56,urban,4,True,True
-172,student,44,urban,1,False,False
-173,stay_at_home,37,suburban,5,False,False
-174,stay_at_home,44,suburban,2,False,False
-175,stay_at_home,52,urban,1,False,False
-176,working_professional,21,suburban,5,True,False
-177,stay_at_home,34,rural,2,True,False
-178,retiree,54,suburban,4,True,False
-179,shift_worker,56,rural,5,True,False
-180,retiree,75,urban,2,False,False
-181,shift_worker,56,suburban,1,True,False
-182,student,61,rural,3,False,False
-183,stay_at_home,64,suburban,1,False,False
-184,retiree,29,rural,3,True,False
-185,stay_at_home,37,rural,5,False,False
-186,retiree,41,suburban,1,True,False
-187,student,23,suburban,3,False,False
-188,shift_worker,64,rural,1,True,False
-189,working_professional,20,urban,2,True,False
-190,retiree,75,rural,2,True,False
-191,student,28,suburban,2,True,False
-192,working_professional,65,rural,2,True,False
-193,stay_at_home,55,suburban,2,False,False
-194,stay_at_home,63,urban,1,True,False
-195,working_professional,19,urban,1,False,False
-196,student,18,rural,3,True,False
-197,retiree,66,urban,4,True,False
-198,working_professional,62,urban,2,False,False
-199,working_professional,23,rural,2,True,True
-200,retiree,62,suburban,4,False,False
-201,working_professional,25,urban,4,True,False
-202,student,60,suburban,3,False,False
-203,shift_worker,44,urban,3,True,False
-204,student,46,suburban,5,True,False
-205,working_professional,37,urban,1,True,True
-206,retiree,76,urban,1,True,False
-207,retiree,76,urban,3,False,False
-208,working_professional,63,rural,1,True,True
-209,stay_at_home,43,suburban,5,False,False
-210,retiree,68,suburban,1,False,False
-211,retiree,70,rural,4,False,False
-212,retiree,75,urban,1,True,False
-213,working_professional,59,urban,4,False,False
-214,student,28,urban,3,False,False
-215,student,47,urban,5,True,False
-216,student,21,suburban,3,False,False
-217,shift_worker,47,urban,5,True,False
-218,retiree,75,rural,3,False,False
-219,retiree,53,rural,3,True,False
-220,retiree,35,urban,1,False,False
-221,retiree,67,urban,1,True,False
-222,working_professional,32,suburban,3,True,True
-223,retiree,72,rural,5,False,False
-224,working_professional,65,rural,5,True,True
-225,working_professional,58,urban,2,False,False
-226,student,18,suburban,4,True,False
-227,retiree,56,suburban,5,False,False
-228,retiree,50,rural,3,True,False
-229,retiree,72,urban,2,True,False
-230,shift_worker,62,urban,3,False,False
-231,working_professional,55,rural,3,True,True
-232,retiree,68,suburban,5,False,False
-233,student,35,suburban,3,False,False
-234,working_professional,58,rural,5,False,True
-235,shift_worker,47,suburban,4,True,False
-236,retiree,78,urban,4,False,False
-237,retiree,41,urban,4,True,False
-238,retiree,68,urban,1,True,False
-239,stay_at_home,36,urban,5,False,False
-240,working_professional,61,suburban,2,False,False
-241,retiree,76,rural,5,False,False
-242,stay_at_home,42,rural,5,True,False
-243,retiree,70,urban,1,False,False
-244,shift_worker,55,suburban,2,True,False
-245,working_professional,25,suburban,3,True,False
-246,stay_at_home,36,urban,2,False,False
-247,retiree,78,suburban,1,True,False
-248,student,40,suburban,5,False,False
-249,shift_worker,62,urban,3,False,False
-250,stay_at_home,51,rural,1,True,False
-251,shift_worker,52,rural,3,True,False
-252,retiree,38,urban,4,True,False
-253,stay_at_home,54,urban,1,False,False
-254,stay_at_home,26,suburban,1,False,False
-255,stay_at_home,33,urban,5,False,False
-256,working_professional,59,urban,3,False,True
-257,shift_worker,29,suburban,3,False,False
-258,working_professional,62,urban,5,True,False
-259,retiree,46,suburban,2,True,False
-260,retiree,66,rural,1,False,False
-261,retiree,69,urban,2,True,False
-262,stay_at_home,48,rural,1,False,False
-263,retiree,69,urban,2,False,False
-264,stay_at_home,51,urban,2,True,False
-265,stay_at_home,28,urban,5,False,False
-266,stay_at_home,55,suburban,4,False,False
-267,retiree,67,suburban,4,True,False
-268,retiree,74,rural,4,False,False
-269,shift_worker,25,rural,5,False,False
-270,student,44,rural,5,False,False
-271,retiree,79,suburban,5,False,False
-272,working_professional,55,urban,1,True,True
-273,shift_worker,31,urban,2,True,False
-274,stay_at_home,43,suburban,4,True,False
-275,shift_worker,55,urban,2,True,False
-276,student,21,rural,3,True,False
-277,stay_at_home,37,urban,1,False,False
-278,stay_at_home,63,rural,2,False,False
-279,retiree,74,urban,1,False,False
-280,student,35,suburban,1,True,False
-281,retiree,47,rural,2,True,False
-282,working_professional,30,rural,2,True,False
-283,shift_worker,49,urban,1,False,False
-284,retiree,59,rural,4,False,False
-285,working_professional,63,urban,3,True,False
-286,retiree,46,suburban,4,False,False
-287,shift_worker,36,urban,4,True,False
-288,stay_at_home,45,urban,2,True,False
-289,retiree,55,suburban,2,True,False
-290,stay_at_home,45,rural,2,False,False
-291,shift_worker,63,urban,3,True,False
-292,retiree,59,urban,4,False,False
-293,working_professional,23,urban,5,True,False
-294,shift_worker,49,suburban,2,False,False
-295,working_professional,21,suburban,1,True,True
-296,student,21,suburban,1,True,False
-297,retiree,40,rural,4,True,False
-298,student,25,suburban,3,False,False
-299,student,55,urban,4,False,False
-300,stay_at_home,28,urban,1,False,False
-301,working_professional,23,urban,5,False,True
-302,retiree,67,urban,1,True,False
-303,retiree,28,rural,2,True,False
-304,student,48,suburban,5,True,False
-305,working_professional,33,urban,5,False,False
-306,stay_at_home,53,rural,1,False,False
-307,student,22,suburban,4,True,False
-308,shift_worker,45,suburban,4,False,False
-309,working_professional,20,rural,4,True,False
-310,working_professional,21,urban,1,False,True
-311,retiree,39,rural,1,False,False
-312,retiree,69,urban,5,True,False
-313,stay_at_home,55,rural,2,False,False
-314,working_professional,19,suburban,3,True,False
-315,student,48,urban,4,False,False
-316,retiree,67,suburban,2,False,False
-317,working_professional,32,suburban,5,True,True
-318,shift_worker,62,suburban,5,True,False
-319,student,61,urban,5,True,False
-320,retiree,36,suburban,5,False,False
-321,student,24,urban,5,True,False
-322,stay_at_home,50,suburban,5,False,False
-323,retiree,31,rural,5,True,False
-324,shift_worker,39,rural,5,True,False
-325,student,46,suburban,3,True,False
-326,retiree,74,rural,1,False,False
-327,working_professional,43,rural,4,True,True
-328,retiree,66,suburban,1,True,False
-329,working_professional,20,rural,1,True,False
-330,shift_worker,52,urban,3,True,False
-331,stay_at_home,45,rural,1,False,False
-332,retiree,78,urban,1,False,False
-333,retiree,28,urban,2,False,False
-334,shift_worker,45,urban,4,False,False
-335,retiree,77,rural,3,False,False
-336,retiree,79,rural,1,False,False
-337,retiree,72,rural,5,False,False
-338,retiree,51,urban,3,True,False
-339,student,23,suburban,4,False,False
-340,retiree,25,urban,4,True,False
-341,retiree,37,urban,2,True,False
-342,working_professional,45,suburban,3,True,True
-343,stay_at_home,56,urban,4,False,False
-344,retiree,44,rural,4,False,False
-345,retiree,79,suburban,1,False,False
-346,retiree,66,rural,4,False,False
-347,working_professional,19,rural,1,False,False
-348,shift_worker,56,rural,5,True,False
-349,stay_at_home,56,suburban,3,True,False
-350,student,46,suburban,5,False,False
-351,shift_worker,38,urban,3,False,False
-352,retiree,62,urban,3,False,False
-353,retiree,70,urban,2,False,False
-354,student,37,rural,5,False,False
-355,working_professional,21,suburban,2,False,True
-356,retiree,33,rural,1,True,False
-357,shift_worker,43,suburban,3,True,False
-358,retiree,76,urban,5,True,False
-359,working_professional,65,suburban,2,True,False
-360,student,45,urban,2,True,False
-361,stay_at_home,38,urban,3,True,False
-362,retiree,78,suburban,4,False,False
-363,working_professional,53,suburban,2,False,True
-364,retiree,41,suburban,2,True,False
-365,working_professional,18,urban,3,True,False
-366,stay_at_home,35,rural,4,False,False
-367,stay_at_home,54,rural,4,False,False
-368,stay_at_home,63,suburban,1,False,False
-369,working_professional,25,rural,1,False,False
-370,working_professional,53,rural,2,True,True
-371,student,56,urban,1,False,False
-372,shift_worker,39,rural,4,True,False
-373,stay_at_home,57,urban,3,False,False
-374,retiree,72,rural,3,False,False
-375,student,31,rural,3,False,False
-376,student,46,urban,4,False,False
-377,working_professional,22,rural,4,True,False
-378,stay_at_home,37,rural,4,False,False
-379,retiree,76,suburban,5,True,False
-380,working_professional,57,rural,2,True,True
-381,stay_at_home,45,rural,5,True,False
-382,retiree,80,urban,3,False,False
-383,stay_at_home,33,rural,5,True,False
-384,working_professional,38,suburban,5,True,False
-385,retiree,69,suburban,1,True,False
-386,shift_worker,29,rural,1,True,False
-387,retiree,32,urban,1,False,False
-388,stay_at_home,51,suburban,5,True,False
-389,shift_worker,49,suburban,3,False,False
-390,retiree,68,suburban,5,True,False
-391,working_professional,18,rural,2,False,True
-392,stay_at_home,45,suburban,5,True,False
-393,stay_at_home,29,rural,3,True,False
-394,retiree,62,suburban,4,True,False
-395,student,35,suburban,5,True,False
-396,student,57,rural,1,False,False
-397,student,62,urban,1,True,False
-398,stay_at_home,53,suburban,1,False,False
-399,student,63,urban,4,False,False
-400,student,35,suburban,5,False,False
-401,student,21,urban,3,True,False
-402,stay_at_home,33,suburban,2,False,False
-403,working_professional,48,rural,3,True,True
-404,shift_worker,57,suburban,4,True,False
-405,shift_worker,35,suburban,2,False,False
-406,retiree,75,suburban,3,False,False
-407,student,59,urban,4,False,False
-408,student,21,suburban,5,False,False
-409,retiree,78,suburban,5,True,False
-410,working_professional,56,suburban,1,False,False
-411,retiree,68,rural,3,True,False
-412,working_professional,21,rural,5,False,False
-413,student,46,rural,2,False,False
-414,student,32,urban,2,False,False
-415,retiree,68,suburban,2,True,False
-416,retiree,72,urban,2,False,False
-417,retiree,67,suburban,5,False,False
-418,stay_at_home,44,suburban,5,True,False
-419,stay_at_home,48,urban,2,False,False
-420,working_professional,31,suburban,4,True,True
-421,student,37,urban,5,False,False
-422,shift_worker,35,suburban,4,True,False
-423,working_professional,35,rural,3,True,False
-424,retiree,60,urban,2,True,False
-425,student,60,rural,3,True,False
-426,student,64,urban,1,False,False
-427,retiree,78,suburban,4,True,False
-428,retiree,80,suburban,1,False,False
-429,stay_at_home,37,suburban,2,True,False
-430,working_professional,64,urban,5,True,False
-431,retiree,74,urban,2,True,False
-432,student,42,urban,2,True,False
-433,retiree,67,suburban,1,False,False
-434,retiree,72,suburban,2,False,False
-435,shift_worker,58,urban,5,True,False
-436,retiree,73,urban,2,True,False
-437,working_professional,23,urban,1,False,True
-438,retiree,64,urban,4,False,False
-439,retiree,72,suburban,1,True,False
-440,working_professional,18,urban,5,False,False
-441,shift_worker,28,suburban,5,False,False
-442,student,21,urban,1,False,False
-443,retiree,71,rural,5,False,False
-444,shift_worker,59,rural,4,True,False
-445,student,44,rural,2,True,False
-446,working_professional,23,rural,5,True,False
-447,retiree,80,rural,1,False,False
-448,working_professional,21,rural,3,False,True
-449,stay_at_home,26,rural,5,False,False
-450,working_professional,45,rural,1,True,False
-451,working_professional,20,urban,5,True,False
-452,retiree,69,urban,2,False,False
-453,retiree,30,rural,5,True,False
-454,working_professional,58,suburban,4,True,True
-455,working_professional,65,urban,3,False,False
-456,working_professional,62,suburban,4,True,True
-457,working_professional,24,suburban,4,True,True
-458,student,21,suburban,5,False,False
-459,working_professional,51,suburban,1,False,False
-460,retiree,68,suburban,5,False,False
-461,retiree,66,urban,2,True,False
-462,retiree,78,suburban,3,False,False
-463,retiree,78,urban,2,True,False
-464,student,22,suburban,5,True,False
-465,stay_at_home,48,suburban,1,True,False
-466,working_professional,43,urban,1,True,True
-467,student,21,rural,1,False,False
-468,student,61,rural,4,False,False
-469,student,28,rural,2,True,False
-470,retiree,67,rural,4,True,False
-471,stay_at_home,54,suburban,1,False,False
-472,retiree,71,urban,1,False,False
-473,working_professional,37,urban,1,True,False
-474,working_professional,43,urban,2,True,True
-475,stay_at_home,36,urban,5,True,False
-476,retiree,71,rural,3,False,False
-477,shift_worker,35,rural,1,False,False
-478,stay_at_home,25,rural,1,True,False
-479,retiree,46,rural,2,True,False
-480,student,57,urban,5,False,False
-481,shift_worker,32,rural,5,False,False
-482,working_professional,34,urban,3,False,False
-483,student,19,suburban,4,True,False
-484,retiree,69,suburban,3,True,False
-485,retiree,77,suburban,5,False,False
-486,student,21,rural,1,True,False
-487,student,24,urban,3,True,False
-488,shift_worker,61,rural,5,False,False
-489,student,21,suburban,2,False,False
-490,student,40,rural,1,False,False
-491,student,20,rural,1,True,False
-492,retiree,66,urban,4,False,False
-493,stay_at_home,59,urban,2,True,False
-494,shift_worker,58,suburban,1,False,False
-495,retiree,53,rural,5,False,False
-496,working_professional,42,rural,5,True,True
-497,student,47,suburban,2,True,False
-498,working_professional,30,suburban,4,True,False
-499,retiree,77,urban,1,True,False
-500,retiree,39,rural,4,True,False
-501,shift_worker,54,rural,1,True,False
-502,retiree,70,suburban,3,False,False
-503,shift_worker,26,urban,1,True,False
-504,retiree,77,suburban,4,True,False
-505,stay_at_home,60,suburban,4,True,False
-506,working_professional,34,suburban,3,False,False
-507,shift_worker,62,rural,4,True,False
-508,working_professional,18,rural,3,True,False
-509,student,62,rural,3,True,False
-510,retiree,31,suburban,3,False,False
-511,retiree,77,urban,2,True,False
-512,retiree,35,rural,1,False,False
-513,retiree,71,urban,2,False,False
-514,retiree,69,urban,5,True,False
-515,retiree,44,urban,4,True,False
-516,shift_worker,45,rural,5,False,False
-517,student,22,rural,5,False,False
-518,working_professional,41,urban,5,False,True
-519,retiree,73,urban,1,False,False
-520,student,24,suburban,1,True,False
-521,student,51,rural,2,False,False
-522,retiree,71,urban,2,True,False
-523,student,24,urban,3,False,False
-524,student,19,suburban,3,False,False
-525,retiree,79,urban,5,False,False
-526,retiree,48,suburban,3,False,False
-527,student,20,rural,4,True,False
-528,shift_worker,58,rural,5,False,False
-529,shift_worker,50,urban,3,True,False
-530,shift_worker,31,rural,3,True,False
-531,working_professional,19,urban,1,False,True
-532,student,46,rural,3,False,False
-533,retiree,76,rural,5,True,False
-534,shift_worker,56,rural,5,False,False
-535,retiree,67,urban,4,False,False
-536,working_professional,24,rural,1,False,True
-537,shift_worker,48,rural,5,True,False
-538,working_professional,24,rural,5,True,False
-539,retiree,46,rural,4,True,False
-540,student,60,urban,2,False,False
-541,retiree,77,rural,1,True,False
-542,student,19,rural,2,True,False
-543,stay_at_home,56,rural,4,True,False
-544,stay_at_home,61,suburban,1,False,False
-545,shift_worker,35,suburban,2,False,False
-546,shift_worker,34,rural,4,True,False
-547,retiree,56,suburban,3,True,False
-548,student,29,rural,5,False,False
-549,student,55,rural,2,True,False
-550,student,51,urban,4,False,False
-551,shift_worker,61,suburban,1,True,False
-552,stay_at_home,47,suburban,5,False,False
-553,retiree,79,rural,5,False,False
-554,working_professional,44,rural,5,True,False
-555,shift_worker,43,suburban,3,False,False
-556,student,45,urban,3,False,False
-557,working_professional,62,suburban,1,True,True
-558,student,24,rural,1,True,False
-559,student,22,urban,5,True,False
-560,student,20,rural,5,False,False
-561,stay_at_home,56,rural,1,True,False
-562,student,21,suburban,2,True,False
-563,stay_at_home,46,suburban,2,True,False
-564,working_professional,21,rural,2,True,False
-565,stay_at_home,65,suburban,4,True,False
-566,retiree,70,rural,3,True,False
-567,student,42,rural,5,False,False
-568,retiree,64,suburban,4,False,False
-569,shift_worker,55,rural,4,True,False
-570,working_professional,19,rural,3,True,False
-571,working_professional,45,rural,5,False,False
-572,retiree,71,urban,3,False,False
-573,working_professional,18,rural,1,True,False
-574,retiree,39,rural,5,True,False
-575,retiree,68,rural,3,False,False
-576,retiree,79,suburban,5,True,False
-577,student,24,urban,4,True,False
-578,student,20,urban,5,False,False
-579,retiree,76,urban,1,False,False
-580,retiree,74,rural,4,False,False
-581,student,29,urban,4,True,False
-582,stay_at_home,47,suburban,3,False,False
-583,stay_at_home,63,rural,5,True,False
-584,retiree,29,rural,2,True,False
-585,retiree,70,rural,2,False,False
-586,shift_worker,53,rural,1,True,False
-587,retiree,78,rural,2,True,False
-588,retiree,69,suburban,4,False,False
-589,working_professional,25,suburban,4,False,True
-590,working_professional,24,urban,5,False,True
-591,shift_worker,37,rural,5,True,False
-592,retiree,76,urban,5,False,False
-593,retiree,56,rural,4,False,False
-594,shift_worker,28,urban,4,True,False
-595,student,60,urban,2,True,False
-596,retiree,45,suburban,2,False,False
-597,stay_at_home,63,urban,3,False,False
-598,shift_worker,65,rural,5,False,False
-599,stay_at_home,59,urban,1,False,False
-600,retiree,28,suburban,5,False,False
-601,retiree,46,urban,3,False,False
-602,retiree,79,rural,3,True,False
-603,retiree,51,rural,3,False,False
-604,student,57,suburban,5,True,False
-605,retiree,53,urban,4,True,False
-606,student,23,urban,1,False,False
-607,retiree,40,suburban,5,False,False
-608,retiree,75,urban,2,True,False
-609,retiree,37,urban,3,True,False
-610,retiree,69,rural,1,False,False
-611,shift_worker,37,suburban,3,False,False
-612,shift_worker,50,rural,2,True,False
-613,student,29,suburban,2,False,False
-614,working_professional,25,rural,4,True,False
-615,retiree,69,suburban,4,False,False
-616,retiree,76,rural,3,True,False
-617,retiree,67,suburban,3,False,False
-618,retiree,37,suburban,3,True,False
-619,retiree,66,suburban,1,False,False
-620,retiree,78,rural,1,False,False
-621,student,51,urban,3,False,False
-622,retiree,26,urban,2,False,False
-623,shift_worker,28,suburban,2,True,False
-624,retiree,50,suburban,1,False,False
-625,shift_worker,65,rural,1,True,False
-626,shift_worker,33,rural,2,False,False
-627,retiree,71,rural,1,True,False
-628,working_professional,51,suburban,1,False,False
-629,student,27,rural,5,False,False
-630,retiree,77,suburban,1,True,False
-631,retiree,68,suburban,1,False,False
-632,student,22,urban,5,True,False
-633,retiree,26,rural,1,False,False
-634,student,23,suburban,1,True,False
-635,shift_worker,60,urban,2,True,False
-636,student,20,suburban,3,True,False
-637,retiree,80,suburban,3,True,False
-638,working_professional,33,suburban,2,False,False
-639,shift_worker,25,urban,5,True,False
-640,retiree,71,rural,4,False,False
-641,working_professional,57,suburban,4,False,True
-642,retiree,75,rural,3,True,False
-643,shift_worker,50,urban,1,True,False
-644,shift_worker,61,urban,2,True,False
-645,retiree,76,suburban,2,False,False
-646,student,21,suburban,5,True,False
-647,student,62,urban,4,True,False
-648,shift_worker,65,suburban,4,True,False
-649,student,35,rural,5,False,False
-650,shift_worker,51,urban,1,False,False
-651,working_professional,62,suburban,4,True,True
-652,working_professional,60,urban,4,False,True
-653,retiree,68,urban,1,False,False
-654,retiree,78,suburban,4,True,False
-655,retiree,71,urban,3,True,False
-656,student,64,urban,3,False,False
-657,student,19,rural,1,True,False
-658,student,35,suburban,2,True,False
-659,working_professional,39,rural,5,False,False
-660,student,37,rural,2,False,False
-661,student,38,suburban,1,False,False
-662,retiree,48,rural,3,True,False
-663,retiree,75,urban,2,True,False
-664,stay_at_home,46,rural,5,True,False
-665,retiree,71,urban,4,True,False
-666,working_professional,63,rural,1,True,True
-667,retiree,55,suburban,5,False,False
-668,retiree,66,rural,1,True,False
-669,stay_at_home,50,rural,3,False,False
-670,working_professional,50,urban,1,False,False
-671,stay_at_home,39,rural,1,True,False
-672,retiree,80,suburban,2,True,False
-673,working_professional,62,suburban,5,False,True
-674,working_professional,42,urban,4,False,True
-675,working_professional,31,rural,3,False,True
-676,student,40,suburban,5,True,False
-677,retiree,40,urban,3,False,False
-678,shift_worker,65,suburban,4,False,False
-679,retiree,68,rural,5,True,False
-680,student,44,rural,4,False,False
-681,retiree,68,rural,1,True,False
-682,retiree,78,suburban,5,True,False
-683,retiree,70,rural,3,True,False
-684,stay_at_home,46,rural,1,True,False
-685,retiree,25,urban,1,False,False
-686,student,19,urban,4,False,False
-687,retiree,69,rural,5,True,False
-688,stay_at_home,48,rural,1,False,False
-689,working_professional,48,suburban,4,False,True
-690,retiree,70,suburban,5,True,False
-691,student,44,rural,2,True,False
-692,retiree,41,urban,2,True,False
-693,student,21,urban,2,True,False
-694,stay_at_home,61,rural,1,False,False
-695,retiree,77,rural,3,True,False
-696,stay_at_home,65,suburban,3,False,False
-697,retiree,67,rural,4,False,False
-698,retiree,70,suburban,4,False,False
-699,stay_at_home,39,urban,4,True,False
-700,retiree,79,urban,5,True,False
-701,working_professional,52,suburban,3,False,False
-702,retiree,38,rural,3,True,False
-703,student,41,suburban,5,False,False
-704,working_professional,18,urban,2,True,True
-705,student,30,urban,3,True,False
-706,shift_worker,27,suburban,4,False,False
-707,working_professional,23,rural,5,False,False
-708,retiree,44,suburban,1,True,False
-709,shift_worker,50,urban,5,False,False
-710,retiree,68,suburban,2,True,False
-711,student,54,urban,2,False,False
-712,retiree,68,suburban,1,False,False
-713,shift_worker,62,rural,4,True,False
-714,shift_worker,61,rural,4,True,False
-715,stay_at_home,56,urban,1,False,False
-716,shift_worker,56,urban,1,True,False
-717,student,19,suburban,4,True,False
-718,retiree,66,urban,2,True,False
-719,student,18,suburban,4,False,False
-720,retiree,70,urban,4,True,False
-721,shift_worker,27,urban,3,True,False
-722,working_professional,59,rural,2,False,True
-723,retiree,66,urban,1,True,False
-724,retiree,76,urban,4,False,False
-725,retiree,74,suburban,3,True,False
-726,shift_worker,45,suburban,1,True,False
-727,working_professional,25,suburban,1,False,True
-728,working_professional,51,urban,3,False,False
-729,retiree,37,urban,3,True,False
-730,working_professional,54,suburban,4,False,False
-731,stay_at_home,63,urban,5,False,False
-732,retiree,75,rural,1,True,False
-733,retiree,34,urban,2,True,False
-734,working_professional,22,rural,4,True,True
-735,retiree,63,rural,1,True,False
-736,student,65,urban,1,True,False
-737,retiree,77,suburban,3,False,False
-738,shift_worker,57,urban,1,False,False
-739,retiree,37,urban,5,False,False
-740,student,43,urban,1,False,False
-741,stay_at_home,31,suburban,3,True,False
-742,stay_at_home,60,urban,3,True,False
-743,retiree,58,suburban,3,False,False
-744,retiree,31,suburban,1,True,False
-745,shift_worker,34,rural,4,True,False
-746,stay_at_home,32,rural,2,True,False
-747,student,30,urban,5,True,False
-748,working_professional,19,rural,5,True,False
-749,stay_at_home,41,urban,1,False,False
-750,retiree,41,suburban,2,True,False
-751,working_professional,19,suburban,2,False,False
-752,retiree,69,rural,5,False,False
-753,retiree,60,rural,3,True,False
-754,retiree,79,suburban,3,True,False
-755,student,52,urban,2,True,False
-756,working_professional,60,urban,3,False,True
-757,shift_worker,38,suburban,4,True,False
-758,working_professional,53,rural,5,True,True
-759,retiree,57,urban,3,True,False
-760,retiree,47,urban,1,True,False
-761,retiree,80,suburban,5,False,False
-762,student,39,urban,4,True,False
-763,retiree,78,urban,5,True,False
-764,retiree,66,suburban,4,True,False
-765,retiree,75,rural,2,False,False
-766,student,44,suburban,1,True,False
-767,retiree,27,suburban,1,False,False
-768,retiree,67,suburban,3,True,False
-769,working_professional,31,suburban,5,True,False
-770,retiree,67,rural,5,False,False
-771,retiree,51,rural,5,False,False
-772,retiree,70,urban,4,True,False
-773,retiree,72,urban,1,True,False
-774,student,51,rural,5,False,False
-775,retiree,74,urban,1,True,False
-776,working_professional,22,urban,3,True,False
-777,student,46,urban,3,False,False
-778,working_professional,50,suburban,4,False,True
-779,retiree,77,rural,5,True,False
-780,student,51,urban,2,True,False
-781,retiree,56,urban,4,False,False
-782,working_professional,22,suburban,5,False,True
-783,stay_at_home,50,urban,3,False,False
-784,stay_at_home,53,suburban,1,True,False
-785,student,24,urban,2,True,False
-786,shift_worker,54,rural,5,False,False
-787,stay_at_home,40,urban,3,True,False
-788,retiree,68,urban,3,False,False
-789,student,52,rural,5,False,False
-790,shift_worker,65,suburban,5,False,False
-791,student,33,urban,1,False,False
-792,shift_worker,48,rural,2,False,False
-793,retiree,30,rural,1,False,False
-794,retiree,34,rural,4,False,False
-795,retiree,72,rural,5,False,False
-796,retiree,39,suburban,1,False,False
-797,working_professional,62,rural,5,True,True
-798,stay_at_home,42,suburban,5,False,False
-799,retiree,74,suburban,1,True,False
-800,retiree,69,rural,2,True,False
-801,student,46,rural,4,False,False
-802,shift_worker,45,urban,3,True,False
-803,shift_worker,54,rural,5,True,False
-804,working_professional,21,urban,3,False,False
-805,retiree,39,urban,2,False,False
-806,stay_at_home,55,urban,1,False,False
-807,working_professional,59,urban,3,False,False
-808,stay_at_home,51,suburban,1,False,False
-809,retiree,63,suburban,5,True,False
-810,shift_worker,65,urban,3,False,False
-811,shift_worker,48,urban,2,True,False
-812,shift_worker,48,rural,4,True,False
-813,retiree,72,urban,4,True,False
-814,retiree,34,suburban,1,True,False
-815,stay_at_home,45,suburban,5,False,False
-816,retiree,79,suburban,4,False,False
-817,retiree,59,urban,5,False,False
-818,student,60,urban,4,False,False
-819,retiree,73,suburban,5,False,False
-820,retiree,72,suburban,3,False,False
-821,working_professional,22,urban,5,True,False
-822,retiree,75,suburban,5,False,False
-823,shift_worker,52,suburban,5,False,False
-824,retiree,69,suburban,3,True,False
-825,shift_worker,65,rural,2,True,False
-826,retiree,58,rural,1,True,False
-827,retiree,52,rural,4,False,False
-828,retiree,33,suburban,2,False,False
-829,student,59,urban,4,False,False
-830,retiree,68,rural,2,False,False
-831,working_professional,30,suburban,2,True,True
-832,retiree,79,rural,2,False,False
-833,working_professional,61,rural,2,False,False
-834,retiree,72,rural,5,True,False
-835,student,18,urban,1,True,False
-836,stay_at_home,34,urban,2,False,False
-837,retiree,65,urban,4,False,False
-838,retiree,79,suburban,3,True,False
-839,stay_at_home,48,suburban,2,True,False
-840,retiree,54,urban,3,True,False
-841,retiree,73,suburban,5,True,False
-842,retiree,67,urban,4,True,False
-843,retiree,47,rural,4,True,False
-844,retiree,71,rural,1,True,False
-845,working_professional,52,rural,5,False,False
-846,stay_at_home,40,rural,2,True,False
-847,student,42,urban,1,False,False
-848,working_professional,29,rural,3,False,False
-849,retiree,67,rural,4,False,False
-850,retiree,74,suburban,4,False,False
-851,retiree,42,suburban,4,True,False
-852,retiree,79,suburban,4,True,False
-853,student,45,suburban,1,False,False
-854,working_professional,58,rural,3,True,True
-855,student,20,rural,2,True,False
-856,retiree,69,suburban,2,False,False
-857,retiree,75,suburban,3,False,False
-858,working_professional,20,suburban,4,False,False
-859,stay_at_home,41,urban,5,False,False
-860,stay_at_home,38,suburban,5,True,False
-861,student,39,rural,2,True,False
-862,student,25,urban,2,True,False
-863,student,56,suburban,2,True,False
-864,student,38,urban,3,True,False
-865,retiree,58,rural,1,False,False
-866,student,46,suburban,5,True,False
-867,student,22,urban,1,True,False
-868,retiree,69,urban,2,True,False
-869,shift_worker,56,urban,2,False,False
-870,shift_worker,44,urban,2,False,False
-871,working_professional,60,rural,3,False,True
-872,retiree,79,rural,4,True,False
-873,shift_worker,29,rural,2,True,False
-874,working_professional,46,urban,1,True,False
-875,retiree,45,suburban,3,True,False
-876,retiree,29,suburban,2,False,False
-877,shift_worker,54,rural,1,False,False
-878,shift_worker,65,rural,3,True,False
-879,retiree,78,urban,4,False,False
-880,retiree,37,suburban,5,True,False
-881,stay_at_home,53,urban,5,False,False
-882,student,20,rural,3,True,False
-883,retiree,68,suburban,4,False,False
-884,retiree,80,urban,1,False,False
-885,working_professional,51,urban,1,True,True
-886,retiree,76,urban,3,True,False
-887,student,42,rural,3,False,False
-888,stay_at_home,42,suburban,1,False,False
-889,student,46,suburban,4,True,False
-890,retiree,48,urban,2,False,False
-891,working_professional,22,rural,4,False,True
-892,retiree,79,rural,2,True,False
-893,retiree,29,urban,2,True,False
-894,shift_worker,41,urban,2,True,False
-895,student,45,suburban,4,False,False
-896,student,23,urban,3,True,False
-897,stay_at_home,26,rural,2,True,False
-898,shift_worker,50,urban,4,False,False
-899,working_professional,24,rural,2,True,False
-900,retiree,71,suburban,3,False,False
-901,retiree,77,suburban,5,False,False
-902,working_professional,23,urban,5,True,False
-903,working_professional,48,rural,5,True,False
-904,working_professional,42,suburban,2,False,False
-905,retiree,67,urban,4,True,False
-906,working_professional,19,rural,2,True,False
-907,retiree,67,suburban,2,False,False
-908,shift_worker,62,urban,4,True,False
-909,retiree,66,rural,2,False,False
-910,student,61,rural,2,False,False
-911,retiree,28,rural,3,False,False
-912,student,53,suburban,2,True,False
-913,stay_at_home,43,urban,3,False,False
-914,retiree,79,urban,2,False,False
-915,stay_at_home,65,urban,4,True,False
-916,retiree,74,suburban,2,False,False
-917,retiree,71,rural,3,True,False
-918,student,49,urban,4,False,False
-919,retiree,78,rural,3,False,False
-920,shift_worker,25,urban,1,False,False
-921,shift_worker,27,rural,2,False,False
-922,student,22,rural,3,False,False
-923,shift_worker,59,suburban,4,False,False
-924,student,35,suburban,2,False,False
-925,working_professional,53,rural,5,True,False
-926,retiree,67,urban,5,False,False
-927,stay_at_home,28,suburban,4,True,False
-928,retiree,35,suburban,4,True,False
-929,working_professional,26,rural,2,False,True
-930,working_professional,57,suburban,3,True,True
-931,student,36,suburban,5,False,False
-932,stay_at_home,61,urban,5,True,False
-933,retiree,58,rural,3,False,False
-934,retiree,74,rural,2,True,False
-935,retiree,72,urban,5,False,False
-936,stay_at_home,46,urban,5,False,False
-937,retiree,72,urban,1,False,False
-938,stay_at_home,42,suburban,5,False,False
-939,stay_at_home,36,rural,4,False,False
-940,working_professional,61,urban,2,True,True
-941,retiree,42,urban,4,False,False
-942,shift_worker,63,suburban,5,True,False
-943,retiree,78,suburban,3,True,False
-944,working_professional,55,suburban,3,True,True
-945,retiree,25,urban,2,True,False
-946,retiree,80,urban,2,True,False
-947,shift_worker,43,suburban,4,True,False
-948,working_professional,19,urban,4,True,True
-949,stay_at_home,52,urban,2,True,False
-950,working_professional,64,suburban,4,True,True
-951,working_professional,54,urban,2,True,True
-952,retiree,75,suburban,2,True,False
-953,retiree,66,suburban,2,True,False
-954,shift_worker,57,rural,3,False,False
-955,retiree,69,urban,5,False,False
-956,retiree,76,urban,5,False,False
-957,student,25,urban,2,False,False
-958,retiree,73,rural,2,True,False
-959,stay_at_home,51,suburban,1,False,False
-960,working_professional,62,suburban,1,False,True
-961,retiree,57,rural,3,False,False
-962,working_professional,22,urban,1,True,True
-963,student,21,suburban,1,True,False
-964,shift_worker,28,rural,5,False,False
-965,retiree,77,urban,1,True,False
-966,retiree,75,rural,5,True,False
-967,working_professional,18,rural,3,False,False
-968,student,35,suburban,4,False,False
-969,retiree,78,urban,3,True,False
-970,retiree,66,rural,1,True,False
-971,student,47,suburban,4,False,False
-972,stay_at_home,36,rural,4,True,False
-973,student,54,suburban,5,True,False
-974,retiree,37,urban,5,True,False
-975,shift_worker,25,suburban,3,True,False
-976,working_professional,23,suburban,1,False,False
-977,student,48,suburban,5,True,False
-978,working_professional,20,rural,2,False,True
-979,working_professional,24,suburban,5,True,True
-980,stay_at_home,28,urban,4,False,False
-981,working_professional,29,suburban,4,True,False
-982,stay_at_home,46,urban,4,True,False
-983,shift_worker,36,suburban,1,True,False
-984,retiree,71,suburban,1,True,False
-985,retiree,77,urban,4,True,False
-986,retiree,66,rural,4,False,False
-987,retiree,40,rural,5,True,False
-988,student,42,rural,5,False,False
-989,stay_at_home,47,suburban,2,True,False
-990,student,20,rural,5,True,False
-991,working_professional,29,rural,4,False,True
-992,stay_at_home,31,rural,3,False,False
-993,student,18,urban,2,False,False
-994,retiree,75,rural,5,False,False
-995,retiree,77,urban,3,False,False
-996,retiree,66,urban,2,True,False
-997,student,56,suburban,5,False,False
-998,retiree,79,rural,1,False,False
-999,student,49,rural,5,True,False
-1000,stay_at_home,60,urban,1,True,False
+customer_id,profile_type,age,location_type,household_size,has_pets,work_from_home,country,region,city,latitude,longitude
+1,shift_worker,25,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+2,working_professional,36,urban,2,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+3,student,46,urban,3,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+4,retiree,75,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+5,working_professional,61,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+6,retiree,73,urban,1,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+7,student,54,suburban,3,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+8,student,38,rural,4,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+9,working_professional,22,suburban,5,True,True,United Kingdom,England,York,53.959,-1.0815
+10,retiree,76,urban,5,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+11,stay_at_home,65,suburban,5,False,False,United Kingdom,England,York,53.959,-1.0815
+12,shift_worker,55,urban,5,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+13,student,32,urban,4,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+14,retiree,72,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+15,stay_at_home,60,urban,1,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+16,shift_worker,36,urban,3,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+17,retiree,75,urban,5,False,False,United Kingdom,England,London,51.5074,-0.1278
+18,retiree,57,urban,1,True,False,United Kingdom,England,London,51.5074,-0.1278
+19,working_professional,23,rural,5,False,True,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+20,retiree,67,rural,3,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+21,retiree,65,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+22,retiree,78,urban,1,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+23,retiree,31,urban,5,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+24,stay_at_home,55,urban,4,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+25,stay_at_home,60,suburban,5,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+26,retiree,78,urban,3,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+27,working_professional,65,urban,4,True,True,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+28,working_professional,26,suburban,1,False,True,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+29,working_professional,19,urban,1,False,True,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+30,working_professional,50,urban,4,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+31,retiree,67,suburban,2,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+32,retiree,49,urban,3,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+33,student,34,suburban,4,False,False,United Kingdom,England,Bath,51.3811,-2.359
+34,student,59,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+35,working_professional,62,urban,2,True,True,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+36,working_professional,43,suburban,5,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+37,student,65,suburban,2,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+38,retiree,77,urban,4,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+39,shift_worker,38,rural,4,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+40,stay_at_home,29,suburban,4,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+41,stay_at_home,25,rural,3,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+42,working_professional,35,urban,2,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+43,stay_at_home,65,rural,1,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+44,working_professional,35,urban,4,True,True,United Kingdom,England,Leicester,52.6369,-1.1398
+45,stay_at_home,44,suburban,3,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+46,student,18,urban,4,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+47,retiree,47,urban,2,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+48,shift_worker,32,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+49,retiree,50,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+50,shift_worker,42,suburban,4,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+51,retiree,72,urban,3,False,False,United Kingdom,England,London,51.5074,-0.1278
+52,retiree,76,urban,3,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+53,student,43,suburban,2,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+54,shift_worker,50,urban,5,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+55,retiree,74,suburban,4,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+56,retiree,70,suburban,4,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+57,working_professional,30,suburban,4,True,True,United Kingdom,England,Exeter,50.7184,-3.5339
+58,retiree,75,suburban,1,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+59,working_professional,54,urban,1,True,True,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+60,retiree,41,urban,5,True,False,United Kingdom,England,London,51.5074,-0.1278
+61,stay_at_home,41,urban,2,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+62,retiree,57,rural,4,True,False,United Kingdom,England,Truro,50.2632,-5.051
+63,student,18,urban,1,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+64,working_professional,63,urban,3,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+65,stay_at_home,36,urban,2,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+66,student,34,urban,5,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+67,retiree,38,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+68,student,19,urban,4,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+69,retiree,39,urban,4,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+70,working_professional,26,rural,4,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+71,retiree,66,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+72,retiree,71,urban,4,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+73,retiree,68,suburban,1,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+74,working_professional,20,urban,3,False,True,United Kingdom,England,Birmingham,52.4862,-1.8904
+75,shift_worker,56,urban,3,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+76,student,54,suburban,3,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+77,retiree,64,urban,5,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+78,working_professional,36,urban,1,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+79,working_professional,29,urban,1,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+80,working_professional,57,rural,3,False,True,United Kingdom,England,Truro,50.2632,-5.051
+81,shift_worker,42,urban,2,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+82,retiree,80,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+83,student,30,urban,3,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+84,student,26,suburban,3,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+85,retiree,71,urban,1,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+86,stay_at_home,57,urban,4,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+87,student,24,suburban,4,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+88,student,34,urban,5,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+89,working_professional,62,urban,3,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+90,retiree,76,suburban,1,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+91,student,56,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+92,shift_worker,38,urban,2,True,False,United Kingdom,England,London,51.5074,-0.1278
+93,student,64,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+94,working_professional,58,suburban,2,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+95,student,53,urban,3,False,False,United Kingdom,England,London,51.5074,-0.1278
+96,stay_at_home,36,urban,3,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+97,retiree,68,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+98,retiree,72,urban,2,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+99,student,26,urban,5,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+100,shift_worker,34,urban,2,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+101,retiree,50,rural,2,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+102,student,57,urban,2,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+103,shift_worker,61,urban,2,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+104,retiree,40,urban,2,False,False,United Kingdom,England,London,51.5074,-0.1278
+105,working_professional,19,urban,5,True,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+106,student,29,suburban,3,False,False,United Kingdom,England,Bath,51.3811,-2.359
+107,shift_worker,33,urban,2,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+108,retiree,49,rural,1,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+109,student,48,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+110,student,46,rural,4,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+111,stay_at_home,51,urban,1,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+112,student,35,urban,5,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+113,student,23,urban,1,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+114,working_professional,54,suburban,1,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+115,retiree,34,urban,3,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+116,retiree,78,rural,3,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+117,stay_at_home,47,urban,1,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+118,stay_at_home,59,urban,5,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+119,retiree,80,urban,1,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+120,working_professional,58,urban,1,True,True,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+121,stay_at_home,34,urban,5,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+122,retiree,71,rural,1,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+123,shift_worker,34,urban,4,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+124,shift_worker,62,suburban,4,True,False,United Kingdom,England,Bath,51.3811,-2.359
+125,shift_worker,56,rural,3,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+126,working_professional,30,urban,2,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+127,working_professional,31,urban,1,False,True,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+128,student,19,urban,3,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+129,student,25,suburban,3,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+130,shift_worker,42,suburban,3,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+131,working_professional,27,urban,4,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+132,working_professional,20,urban,4,True,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+133,student,58,rural,2,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+134,student,42,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+135,working_professional,22,urban,1,False,True,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+136,student,38,urban,1,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+137,retiree,72,suburban,1,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+138,retiree,77,urban,3,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+139,shift_worker,44,urban,5,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+140,retiree,40,urban,1,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+141,retiree,48,urban,5,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+142,retiree,60,urban,5,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+143,shift_worker,58,suburban,4,False,False,United Kingdom,England,Bath,51.3811,-2.359
+144,retiree,80,rural,4,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+145,shift_worker,39,rural,5,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+146,retiree,79,suburban,3,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+147,working_professional,19,suburban,2,False,False,United Kingdom,England,York,53.959,-1.0815
+148,retiree,78,urban,4,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+149,stay_at_home,65,urban,3,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+150,retiree,69,suburban,4,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+151,retiree,64,suburban,5,False,False,United Kingdom,England,York,53.959,-1.0815
+152,working_professional,59,urban,1,False,True,United Kingdom,England,Nottingham,52.9548,-1.1581
+153,student,52,urban,3,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+154,working_professional,65,urban,4,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+155,shift_worker,37,urban,5,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+156,student,39,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+157,working_professional,20,rural,2,True,True,United Kingdom,Wales,Bangor,53.227,-4.1294
+158,shift_worker,61,suburban,5,True,False,United Kingdom,England,York,53.959,-1.0815
+159,retiree,69,urban,1,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+160,stay_at_home,39,urban,2,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+161,working_professional,38,urban,3,False,True,United Kingdom,England,London,51.5074,-0.1278
+162,retiree,40,urban,4,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+163,retiree,33,urban,2,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+164,retiree,79,urban,2,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+165,stay_at_home,30,suburban,1,False,False,United Kingdom,England,York,53.959,-1.0815
+166,shift_worker,58,urban,5,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+167,retiree,49,urban,2,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+168,student,64,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+169,retiree,42,urban,1,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+170,retiree,76,suburban,4,False,False,United Kingdom,England,Bath,51.3811,-2.359
+171,stay_at_home,64,urban,1,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+172,student,51,urban,5,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+173,working_professional,63,suburban,2,False,True,United Kingdom,England,York,53.959,-1.0815
+174,student,42,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+175,working_professional,21,urban,4,False,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+176,retiree,52,suburban,5,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+177,retiree,74,urban,2,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+178,working_professional,51,suburban,5,False,True,United Kingdom,England,Cambridge,52.2053,0.1218
+179,retiree,76,urban,5,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+180,working_professional,21,suburban,3,True,True,United Kingdom,England,Reading,51.4543,-0.9781
+181,retiree,69,suburban,4,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+182,retiree,46,urban,4,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+183,working_professional,58,urban,3,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+184,working_professional,20,urban,1,False,True,United Kingdom,England,Leicester,52.6369,-1.1398
+185,retiree,75,suburban,3,False,False,United Kingdom,England,Bath,51.3811,-2.359
+186,working_professional,65,suburban,1,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+187,working_professional,51,urban,2,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+188,shift_worker,52,rural,3,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+189,retiree,76,urban,5,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+190,retiree,78,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+191,stay_at_home,48,suburban,2,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+192,stay_at_home,26,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+193,working_professional,27,suburban,3,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+194,working_professional,32,suburban,4,False,True,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+195,student,64,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+196,stay_at_home,35,rural,3,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+197,shift_worker,54,rural,5,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+198,shift_worker,53,urban,5,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+199,working_professional,22,urban,3,False,True,United Kingdom,England,Nottingham,52.9548,-1.1581
+200,student,61,suburban,5,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+201,working_professional,47,urban,5,False,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+202,stay_at_home,51,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+203,retiree,44,urban,1,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+204,working_professional,31,suburban,4,True,True,United Kingdom,England,Exeter,50.7184,-3.5339
+205,retiree,73,rural,3,True,False,United Kingdom,England,Truro,50.2632,-5.051
+206,stay_at_home,30,urban,5,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+207,working_professional,45,suburban,1,False,True,United Kingdom,England,York,53.959,-1.0815
+208,stay_at_home,33,rural,2,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+209,retiree,64,suburban,1,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+210,shift_worker,63,suburban,3,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+211,retiree,76,urban,1,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+212,retiree,50,rural,5,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+213,working_professional,33,urban,5,False,True,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+214,working_professional,21,urban,3,True,True,United Kingdom,England,Leeds,53.8008,-1.5491
+215,retiree,68,suburban,4,True,False,United Kingdom,England,Bath,51.3811,-2.359
+216,working_professional,23,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+217,student,30,urban,1,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+218,stay_at_home,61,suburban,1,False,False,United Kingdom,England,York,53.959,-1.0815
+219,student,47,suburban,5,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+220,stay_at_home,36,urban,2,False,False,United Kingdom,England,London,51.5074,-0.1278
+221,retiree,78,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+222,retiree,61,urban,4,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+223,student,54,urban,4,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+224,stay_at_home,47,urban,4,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+225,working_professional,61,urban,2,True,True,United Kingdom,England,Manchester,53.4808,-2.2426
+226,stay_at_home,42,rural,2,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+227,retiree,79,suburban,4,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+228,student,32,urban,4,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+229,working_professional,38,urban,1,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+230,retiree,72,suburban,2,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+231,retiree,31,urban,2,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+232,retiree,68,rural,2,False,False,United Kingdom,England,Truro,50.2632,-5.051
+233,student,60,suburban,1,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+234,student,38,urban,2,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+235,stay_at_home,51,urban,1,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+236,working_professional,60,urban,5,False,True,United Kingdom,England,Nottingham,52.9548,-1.1581
+237,retiree,69,urban,4,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+238,working_professional,37,urban,1,True,True,United Kingdom,England,Leeds,53.8008,-1.5491
+239,working_professional,60,urban,4,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+240,retiree,72,urban,4,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+241,retiree,69,urban,5,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+242,working_professional,20,urban,5,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+243,retiree,49,urban,4,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+244,stay_at_home,60,suburban,2,False,False,United Kingdom,England,Bath,51.3811,-2.359
+245,retiree,80,urban,5,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+246,stay_at_home,43,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+247,student,56,urban,4,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+248,student,25,urban,4,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+249,stay_at_home,26,urban,4,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+250,working_professional,25,rural,2,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+251,retiree,80,urban,3,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+252,working_professional,44,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+253,student,34,urban,4,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+254,retiree,72,urban,3,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+255,student,23,rural,4,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+256,retiree,76,urban,3,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+257,shift_worker,42,urban,1,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+258,retiree,74,urban,5,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+259,stay_at_home,57,urban,1,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+260,stay_at_home,54,urban,3,True,False,United Kingdom,England,London,51.5074,-0.1278
+261,stay_at_home,57,urban,1,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+262,stay_at_home,57,suburban,4,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+263,student,39,urban,4,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+264,student,49,urban,4,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+265,stay_at_home,59,rural,3,True,False,United Kingdom,England,Truro,50.2632,-5.051
+266,retiree,78,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+267,student,19,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+268,retiree,75,urban,5,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+269,retiree,75,urban,1,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+270,shift_worker,32,rural,1,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+271,working_professional,18,suburban,3,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+272,working_professional,29,suburban,2,True,True,United Kingdom,England,Bath,51.3811,-2.359
+273,working_professional,39,urban,1,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+274,student,26,rural,4,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+275,retiree,76,urban,3,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+276,retiree,73,urban,5,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+277,retiree,67,urban,3,False,False,United Kingdom,England,London,51.5074,-0.1278
+278,retiree,71,suburban,1,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+279,student,55,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+280,stay_at_home,57,urban,3,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+281,stay_at_home,60,urban,2,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+282,retiree,68,urban,5,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+283,student,55,urban,2,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+284,student,54,urban,4,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+285,student,22,urban,1,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+286,retiree,72,urban,4,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+287,stay_at_home,45,suburban,4,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+288,retiree,79,urban,3,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+289,working_professional,42,urban,3,False,True,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+290,retiree,26,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+291,retiree,58,suburban,2,True,False,United Kingdom,England,Bath,51.3811,-2.359
+292,retiree,74,urban,2,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+293,shift_worker,61,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+294,retiree,71,urban,2,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+295,working_professional,19,urban,3,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+296,working_professional,20,urban,3,False,True,United Kingdom,England,Manchester,53.4808,-2.2426
+297,retiree,69,urban,5,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+298,shift_worker,61,urban,1,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+299,stay_at_home,58,suburban,4,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+300,working_professional,58,urban,5,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+301,student,42,urban,4,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+302,working_professional,19,suburban,2,False,True,United Kingdom,England,York,53.959,-1.0815
+303,retiree,70,suburban,2,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+304,shift_worker,61,rural,4,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+305,retiree,77,urban,3,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+306,retiree,66,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+307,retiree,78,urban,1,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+308,retiree,71,urban,5,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+309,retiree,73,rural,1,True,False,United Kingdom,England,Truro,50.2632,-5.051
+310,student,35,urban,5,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+311,working_professional,62,urban,5,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+312,retiree,56,urban,4,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+313,retiree,79,urban,4,False,False,United Kingdom,England,London,51.5074,-0.1278
+314,working_professional,33,urban,5,False,True,United Kingdom,England,Leeds,53.8008,-1.5491
+315,working_professional,19,urban,4,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+316,retiree,66,urban,1,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+317,retiree,75,urban,5,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+318,retiree,70,urban,5,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+319,retiree,62,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+320,student,43,urban,1,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+321,working_professional,20,urban,5,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+322,working_professional,56,rural,5,False,True,United Kingdom,Wales,Bangor,53.227,-4.1294
+323,stay_at_home,38,urban,1,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+324,retiree,39,urban,5,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+325,stay_at_home,53,suburban,4,True,False,United Kingdom,England,Bath,51.3811,-2.359
+326,stay_at_home,25,urban,2,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+327,working_professional,21,suburban,1,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+328,shift_worker,30,urban,5,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+329,working_professional,34,urban,2,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+330,retiree,68,suburban,5,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+331,student,52,urban,4,False,False,United Kingdom,England,London,51.5074,-0.1278
+332,student,23,urban,5,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+333,student,38,urban,5,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+334,working_professional,64,suburban,4,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+335,retiree,78,urban,3,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+336,working_professional,55,urban,2,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+337,retiree,64,suburban,3,True,False,United Kingdom,England,York,53.959,-1.0815
+338,student,31,urban,2,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+339,working_professional,25,suburban,3,False,False,United Kingdom,England,Bath,51.3811,-2.359
+340,shift_worker,25,urban,3,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+341,retiree,75,urban,2,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+342,working_professional,49,urban,3,False,True,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+343,retiree,66,urban,4,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+344,student,63,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+345,retiree,59,urban,2,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+346,stay_at_home,27,urban,4,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+347,stay_at_home,44,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+348,stay_at_home,25,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+349,working_professional,61,urban,1,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+350,working_professional,65,urban,4,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+351,student,26,urban,5,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+352,stay_at_home,37,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+353,retiree,76,urban,5,True,False,United Kingdom,England,London,51.5074,-0.1278
+354,shift_worker,47,suburban,4,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+355,stay_at_home,43,suburban,4,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+356,retiree,26,urban,4,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+357,retiree,32,urban,3,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+358,student,30,urban,3,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+359,retiree,69,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+360,working_professional,19,suburban,1,True,False,United Kingdom,England,Bath,51.3811,-2.359
+361,shift_worker,36,suburban,3,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+362,stay_at_home,48,urban,2,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+363,student,44,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+364,working_professional,32,urban,3,True,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+365,retiree,30,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+366,stay_at_home,49,urban,1,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+367,retiree,36,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+368,retiree,63,urban,2,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+369,retiree,74,urban,1,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+370,stay_at_home,61,suburban,2,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+371,retiree,72,urban,3,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+372,stay_at_home,30,urban,2,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+373,retiree,67,urban,1,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+374,student,22,urban,2,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+375,retiree,50,urban,1,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+376,retiree,66,urban,3,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+377,stay_at_home,43,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+378,retiree,61,urban,3,True,False,United Kingdom,England,London,51.5074,-0.1278
+379,student,20,urban,1,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+380,retiree,71,urban,1,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+381,student,50,urban,2,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+382,retiree,39,rural,3,False,False,United Kingdom,England,Truro,50.2632,-5.051
+383,student,51,urban,3,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+384,stay_at_home,53,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+385,retiree,71,urban,3,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+386,retiree,47,urban,4,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+387,working_professional,25,suburban,1,True,True,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+388,working_professional,21,rural,5,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+389,working_professional,46,urban,4,True,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+390,retiree,78,suburban,4,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+391,retiree,44,suburban,2,False,False,United Kingdom,England,York,53.959,-1.0815
+392,student,52,suburban,1,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+393,retiree,80,urban,3,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+394,working_professional,28,rural,3,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+395,retiree,73,rural,5,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+396,shift_worker,29,urban,1,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+397,retiree,73,urban,5,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+398,retiree,73,urban,2,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+399,working_professional,37,urban,2,True,True,United Kingdom,Wales,Swansea,51.6214,-3.9436
+400,shift_worker,62,rural,4,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+401,stay_at_home,60,rural,4,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+402,retiree,26,urban,2,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+403,shift_worker,47,urban,3,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+404,retiree,27,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+405,retiree,69,urban,5,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+406,shift_worker,32,urban,1,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+407,retiree,57,urban,1,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+408,retiree,68,suburban,1,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+409,retiree,40,suburban,1,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+410,student,35,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+411,retiree,25,urban,5,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+412,student,48,suburban,5,True,False,United Kingdom,England,York,53.959,-1.0815
+413,student,58,urban,4,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+414,working_professional,48,urban,5,True,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+415,retiree,34,urban,4,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+416,stay_at_home,32,urban,1,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+417,retiree,75,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+418,stay_at_home,41,urban,2,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+419,shift_worker,42,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+420,stay_at_home,35,urban,5,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+421,working_professional,24,urban,3,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+422,shift_worker,47,urban,5,True,False,United Kingdom,England,London,51.5074,-0.1278
+423,retiree,49,urban,1,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+424,retiree,70,urban,5,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+425,retiree,66,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+426,retiree,54,urban,2,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+427,stay_at_home,61,urban,3,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+428,student,34,urban,1,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+429,retiree,80,urban,5,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+430,working_professional,39,urban,3,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+431,working_professional,41,suburban,4,False,True,United Kingdom,England,Bath,51.3811,-2.359
+432,working_professional,44,urban,2,True,True,United Kingdom,England,Liverpool,53.4084,-2.9916
+433,shift_worker,58,urban,2,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+434,retiree,26,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+435,student,20,suburban,5,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+436,working_professional,21,urban,2,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+437,retiree,77,urban,1,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+438,working_professional,39,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+439,retiree,61,urban,4,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+440,student,34,suburban,1,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+441,retiree,44,urban,1,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+442,retiree,57,suburban,5,False,False,United Kingdom,England,Bath,51.3811,-2.359
+443,working_professional,55,suburban,4,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+444,retiree,75,suburban,2,True,False,United Kingdom,England,Bath,51.3811,-2.359
+445,shift_worker,33,urban,1,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+446,stay_at_home,27,urban,1,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+447,retiree,71,urban,4,False,False,United Kingdom,England,London,51.5074,-0.1278
+448,stay_at_home,36,urban,1,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+449,retiree,66,urban,2,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+450,working_professional,30,urban,1,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+451,working_professional,42,urban,3,False,True,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+452,retiree,67,urban,5,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+453,working_professional,64,urban,2,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+454,retiree,35,rural,5,True,False,United Kingdom,England,Truro,50.2632,-5.051
+455,retiree,58,suburban,2,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+456,working_professional,32,urban,2,True,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+457,shift_worker,60,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+458,stay_at_home,50,urban,4,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+459,stay_at_home,29,suburban,3,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+460,retiree,71,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+461,stay_at_home,45,urban,2,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+462,retiree,73,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+463,stay_at_home,38,urban,4,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+464,stay_at_home,26,urban,5,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+465,retiree,77,suburban,3,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+466,working_professional,19,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+467,working_professional,37,urban,1,True,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+468,shift_worker,65,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+469,working_professional,24,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+470,retiree,80,urban,3,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+471,retiree,75,suburban,5,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+472,stay_at_home,45,suburban,5,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+473,retiree,75,suburban,5,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+474,retiree,79,urban,5,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+475,working_professional,63,rural,2,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+476,retiree,77,urban,2,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+477,stay_at_home,32,urban,1,True,False,United Kingdom,England,London,51.5074,-0.1278
+478,student,33,urban,2,False,False,United Kingdom,England,London,51.5074,-0.1278
+479,student,65,urban,3,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+480,student,22,rural,5,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+481,working_professional,50,suburban,4,False,True,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+482,student,38,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+483,working_professional,55,urban,3,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+484,shift_worker,29,suburban,4,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+485,working_professional,61,urban,3,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+486,working_professional,19,urban,1,True,True,United Kingdom,England,Leeds,53.8008,-1.5491
+487,student,21,urban,3,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+488,retiree,44,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+489,student,47,suburban,1,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+490,shift_worker,27,urban,3,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+491,retiree,54,urban,1,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+492,working_professional,35,suburban,4,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+493,stay_at_home,54,urban,3,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+494,retiree,77,urban,5,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+495,stay_at_home,51,urban,3,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+496,working_professional,33,suburban,3,False,True,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+497,retiree,71,urban,5,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+498,working_professional,31,urban,1,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+499,shift_worker,39,suburban,3,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+500,stay_at_home,56,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+501,retiree,73,urban,2,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+502,retiree,78,suburban,3,True,False,United Kingdom,England,York,53.959,-1.0815
+503,retiree,63,urban,5,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+504,stay_at_home,63,urban,5,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+505,stay_at_home,30,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+506,shift_worker,39,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+507,retiree,79,suburban,2,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+508,working_professional,19,urban,5,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+509,retiree,73,urban,5,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+510,stay_at_home,31,urban,3,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+511,student,18,suburban,1,True,False,United Kingdom,England,Bath,51.3811,-2.359
+512,student,37,urban,3,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+513,stay_at_home,35,urban,4,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+514,student,19,urban,1,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+515,shift_worker,60,urban,2,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+516,student,48,urban,5,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+517,working_professional,18,urban,1,False,True,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+518,student,24,urban,4,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+519,student,51,suburban,2,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+520,working_professional,22,urban,2,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+521,stay_at_home,27,urban,3,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+522,retiree,66,urban,5,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+523,retiree,61,suburban,5,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+524,shift_worker,31,urban,5,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+525,retiree,77,urban,1,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+526,retiree,67,urban,3,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+527,student,52,urban,5,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+528,stay_at_home,44,urban,5,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+529,student,36,urban,1,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+530,working_professional,42,rural,5,False,True,United Kingdom,England,Truro,50.2632,-5.051
+531,retiree,60,urban,1,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+532,student,51,urban,3,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+533,retiree,71,suburban,2,False,False,United Kingdom,England,York,53.959,-1.0815
+534,student,23,urban,5,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+535,working_professional,25,urban,3,False,True,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+536,student,21,rural,4,True,False,United Kingdom,England,Truro,50.2632,-5.051
+537,retiree,70,suburban,2,False,False,United Kingdom,England,York,53.959,-1.0815
+538,student,19,urban,1,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+539,retiree,35,urban,5,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+540,stay_at_home,28,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+541,working_professional,21,rural,1,True,True,United Kingdom,England,Truro,50.2632,-5.051
+542,retiree,68,urban,3,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+543,working_professional,19,suburban,2,False,True,United Kingdom,England,Reading,51.4543,-0.9781
+544,shift_worker,34,suburban,2,False,False,United Kingdom,England,York,53.959,-1.0815
+545,student,50,rural,1,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+546,working_professional,27,urban,1,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+547,student,26,urban,4,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+548,working_professional,24,suburban,4,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+549,retiree,53,urban,4,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+550,shift_worker,43,suburban,4,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+551,retiree,57,urban,1,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+552,working_professional,34,urban,5,False,False,United Kingdom,England,London,51.5074,-0.1278
+553,shift_worker,57,urban,5,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+554,student,65,suburban,3,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+555,working_professional,18,rural,3,True,True,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+556,student,40,urban,2,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+557,working_professional,22,urban,2,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+558,stay_at_home,59,suburban,1,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+559,working_professional,23,urban,5,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+560,student,55,urban,2,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+561,retiree,71,urban,4,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+562,student,46,rural,1,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+563,retiree,73,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+564,student,23,rural,3,True,False,United Kingdom,England,Truro,50.2632,-5.051
+565,student,49,urban,5,True,False,United Kingdom,England,London,51.5074,-0.1278
+566,retiree,71,suburban,2,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+567,retiree,37,suburban,1,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+568,retiree,68,rural,1,True,False,United Kingdom,England,Truro,50.2632,-5.051
+569,working_professional,41,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+570,retiree,46,urban,2,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+571,retiree,30,urban,1,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+572,working_professional,24,suburban,4,False,True,United Kingdom,England,Cambridge,52.2053,0.1218
+573,shift_worker,29,urban,2,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+574,retiree,53,urban,4,True,False,United Kingdom,England,London,51.5074,-0.1278
+575,student,27,urban,1,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+576,shift_worker,53,urban,3,False,False,United Kingdom,England,London,51.5074,-0.1278
+577,student,35,suburban,5,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+578,retiree,72,urban,5,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+579,working_professional,22,suburban,3,True,True,United Kingdom,England,Reading,51.4543,-0.9781
+580,working_professional,61,urban,1,False,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+581,stay_at_home,59,urban,3,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+582,student,60,suburban,2,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+583,stay_at_home,48,suburban,5,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+584,working_professional,20,suburban,5,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+585,student,22,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+586,student,18,urban,4,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+587,student,44,urban,5,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+588,retiree,41,urban,1,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+589,student,51,suburban,2,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+590,retiree,75,suburban,4,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+591,retiree,71,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+592,shift_worker,36,urban,3,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+593,student,61,urban,1,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+594,working_professional,20,urban,3,True,True,United Kingdom,England,London,51.5074,-0.1278
+595,student,59,rural,3,False,False,United Kingdom,England,Truro,50.2632,-5.051
+596,student,18,urban,1,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+597,retiree,67,suburban,2,True,False,United Kingdom,England,York,53.959,-1.0815
+598,stay_at_home,53,urban,3,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+599,retiree,66,suburban,4,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+600,shift_worker,42,urban,2,False,False,United Kingdom,England,London,51.5074,-0.1278
+601,shift_worker,54,urban,2,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+602,student,51,suburban,2,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+603,retiree,73,urban,5,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+604,stay_at_home,25,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+605,shift_worker,45,suburban,1,True,False,United Kingdom,England,York,53.959,-1.0815
+606,shift_worker,38,urban,2,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+607,student,32,urban,2,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+608,retiree,73,urban,5,True,False,United Kingdom,England,London,51.5074,-0.1278
+609,working_professional,58,urban,3,False,True,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+610,student,65,urban,5,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+611,retiree,79,rural,2,True,False,United Kingdom,England,Truro,50.2632,-5.051
+612,shift_worker,55,suburban,4,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+613,shift_worker,35,suburban,2,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+614,working_professional,37,urban,3,False,True,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+615,retiree,43,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+616,retiree,67,urban,4,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+617,working_professional,43,rural,4,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+618,retiree,68,suburban,3,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+619,stay_at_home,57,suburban,4,True,False,United Kingdom,England,York,53.959,-1.0815
+620,retiree,58,rural,3,False,False,United Kingdom,England,Truro,50.2632,-5.051
+621,student,37,urban,2,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+622,working_professional,21,suburban,5,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+623,stay_at_home,43,suburban,4,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+624,retiree,67,suburban,2,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+625,retiree,27,suburban,3,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+626,student,31,urban,1,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+627,working_professional,64,rural,2,False,True,United Kingdom,England,Truro,50.2632,-5.051
+628,working_professional,19,urban,3,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+629,retiree,66,suburban,4,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+630,student,21,urban,3,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+631,student,20,urban,3,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+632,retiree,70,urban,3,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+633,student,43,urban,2,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+634,working_professional,22,suburban,4,False,True,United Kingdom,England,Bath,51.3811,-2.359
+635,retiree,42,suburban,2,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+636,working_professional,46,rural,2,False,True,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+637,retiree,78,urban,5,False,False,United Kingdom,England,London,51.5074,-0.1278
+638,retiree,67,urban,5,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+639,retiree,80,urban,3,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+640,stay_at_home,57,suburban,4,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+641,student,40,suburban,4,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+642,shift_worker,37,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+643,shift_worker,57,urban,4,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+644,shift_worker,26,urban,2,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+645,retiree,75,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+646,working_professional,45,urban,3,False,True,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+647,shift_worker,60,urban,4,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+648,student,50,urban,5,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+649,stay_at_home,50,urban,5,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+650,retiree,44,urban,1,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+651,working_professional,33,rural,5,False,True,United Kingdom,Wales,Bangor,53.227,-4.1294
+652,student,28,urban,3,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+653,stay_at_home,26,urban,2,False,False,United Kingdom,England,London,51.5074,-0.1278
+654,shift_worker,46,urban,3,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+655,student,59,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+656,shift_worker,32,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+657,working_professional,33,suburban,1,True,True,United Kingdom,England,York,53.959,-1.0815
+658,stay_at_home,46,suburban,2,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+659,retiree,77,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+660,student,56,urban,5,False,False,United Kingdom,England,London,51.5074,-0.1278
+661,retiree,80,urban,1,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+662,stay_at_home,34,rural,5,True,False,United Kingdom,England,Truro,50.2632,-5.051
+663,retiree,80,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+664,retiree,73,urban,1,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+665,working_professional,37,urban,2,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+666,shift_worker,56,suburban,2,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+667,retiree,26,urban,4,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+668,retiree,69,suburban,4,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+669,stay_at_home,27,urban,5,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+670,retiree,62,suburban,2,True,False,United Kingdom,England,York,53.959,-1.0815
+671,working_professional,23,urban,2,True,True,United Kingdom,England,London,51.5074,-0.1278
+672,stay_at_home,49,urban,3,False,False,United Kingdom,England,London,51.5074,-0.1278
+673,retiree,32,urban,2,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+674,retiree,78,suburban,2,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+675,retiree,80,suburban,4,True,False,United Kingdom,England,Bath,51.3811,-2.359
+676,retiree,78,urban,3,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+677,retiree,45,urban,5,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+678,retiree,42,urban,2,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+679,retiree,53,urban,2,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+680,shift_worker,36,urban,4,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+681,student,23,urban,5,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+682,retiree,79,suburban,5,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+683,student,37,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+684,shift_worker,34,suburban,1,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+685,stay_at_home,58,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+686,working_professional,53,urban,2,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+687,student,48,suburban,5,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+688,student,21,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+689,working_professional,43,suburban,5,True,True,United Kingdom,England,York,53.959,-1.0815
+690,working_professional,44,suburban,5,True,True,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+691,retiree,79,urban,4,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+692,working_professional,19,suburban,3,False,False,United Kingdom,England,York,53.959,-1.0815
+693,student,19,suburban,2,True,False,United Kingdom,England,Bath,51.3811,-2.359
+694,retiree,28,rural,2,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+695,retiree,70,urban,2,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+696,retiree,69,urban,5,False,False,United Kingdom,England,London,51.5074,-0.1278
+697,retiree,79,urban,3,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+698,shift_worker,57,urban,3,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+699,shift_worker,26,urban,2,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+700,student,41,urban,1,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+701,working_professional,64,urban,1,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+702,retiree,44,urban,2,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+703,working_professional,22,suburban,4,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+704,student,24,urban,1,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+705,stay_at_home,37,suburban,5,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+706,student,59,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+707,working_professional,58,urban,1,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+708,retiree,73,rural,5,True,False,United Kingdom,England,Truro,50.2632,-5.051
+709,student,48,urban,2,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+710,shift_worker,47,rural,1,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+711,working_professional,24,suburban,5,True,False,United Kingdom,England,York,53.959,-1.0815
+712,working_professional,30,urban,1,True,True,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+713,shift_worker,25,urban,1,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+714,working_professional,39,rural,4,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+715,retiree,53,urban,3,True,False,United Kingdom,England,London,51.5074,-0.1278
+716,shift_worker,50,urban,1,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+717,retiree,66,suburban,1,False,False,United Kingdom,England,York,53.959,-1.0815
+718,retiree,74,rural,3,False,False,United Kingdom,England,Truro,50.2632,-5.051
+719,retiree,79,urban,3,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+720,retiree,77,urban,4,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+721,stay_at_home,41,urban,4,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+722,retiree,76,urban,4,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+723,shift_worker,60,urban,1,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+724,retiree,72,urban,4,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+725,retiree,45,urban,2,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+726,student,64,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+727,stay_at_home,42,suburban,2,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+728,retiree,53,rural,1,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+729,shift_worker,60,urban,3,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+730,student,52,urban,2,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+731,retiree,32,suburban,5,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+732,student,18,urban,5,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+733,working_professional,23,suburban,5,True,True,United Kingdom,England,Exeter,50.7184,-3.5339
+734,student,21,urban,4,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+735,shift_worker,40,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+736,working_professional,48,rural,1,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+737,student,33,urban,5,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+738,retiree,66,urban,2,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+739,retiree,75,suburban,1,True,False,United Kingdom,England,York,53.959,-1.0815
+740,shift_worker,56,rural,3,True,False,United Kingdom,England,Truro,50.2632,-5.051
+741,shift_worker,59,urban,2,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+742,retiree,66,suburban,5,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+743,retiree,71,suburban,5,True,False,United Kingdom,England,Bath,51.3811,-2.359
+744,student,59,urban,3,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+745,retiree,75,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+746,student,21,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+747,working_professional,18,urban,3,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+748,working_professional,40,suburban,1,False,False,United Kingdom,England,Bath,51.3811,-2.359
+749,stay_at_home,60,urban,3,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+750,retiree,69,urban,1,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+751,student,20,suburban,4,False,False,United Kingdom,England,Bath,51.3811,-2.359
+752,student,22,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+753,retiree,69,urban,5,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+754,retiree,25,urban,4,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+755,retiree,29,urban,5,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+756,working_professional,47,suburban,2,True,False,United Kingdom,England,York,53.959,-1.0815
+757,working_professional,21,urban,2,False,True,United Kingdom,England,London,51.5074,-0.1278
+758,shift_worker,61,urban,4,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+759,student,63,urban,4,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+760,shift_worker,27,rural,1,True,False,United Kingdom,England,Truro,50.2632,-5.051
+761,working_professional,23,urban,4,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+762,shift_worker,32,rural,1,False,False,United Kingdom,England,Truro,50.2632,-5.051
+763,working_professional,24,urban,3,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+764,retiree,77,urban,3,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+765,shift_worker,60,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+766,stay_at_home,62,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+767,stay_at_home,53,suburban,1,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+768,retiree,67,urban,4,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+769,retiree,26,urban,1,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+770,student,35,rural,3,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+771,retiree,53,urban,4,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+772,student,27,urban,5,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+773,retiree,66,urban,4,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+774,shift_worker,29,suburban,3,False,False,United Kingdom,England,Reading,51.4543,-0.9781
+775,shift_worker,54,suburban,3,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+776,retiree,71,urban,5,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+777,student,42,suburban,2,True,False,United Kingdom,England,Bath,51.3811,-2.359
+778,retiree,78,urban,4,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+779,retiree,70,urban,1,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+780,retiree,80,urban,3,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+781,retiree,52,suburban,5,True,False,United Kingdom,England,York,53.959,-1.0815
+782,retiree,66,suburban,3,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+783,retiree,33,urban,3,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+784,retiree,43,urban,5,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+785,stay_at_home,47,suburban,3,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+786,working_professional,30,suburban,3,False,True,United Kingdom,England,Reading,51.4543,-0.9781
+787,working_professional,50,urban,2,False,True,United Kingdom,England,Leicester,52.6369,-1.1398
+788,stay_at_home,36,urban,2,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+789,student,24,urban,3,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+790,retiree,49,urban,1,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+791,retiree,73,suburban,3,True,False,United Kingdom,England,York,53.959,-1.0815
+792,student,39,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+793,student,54,suburban,1,False,False,United Kingdom,England,Bath,51.3811,-2.359
+794,student,20,urban,3,True,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+795,retiree,75,urban,2,False,False,United Kingdom,England,Bristol,51.4545,-2.5879
+796,working_professional,21,urban,3,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+797,retiree,73,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+798,student,38,suburban,4,False,False,United Kingdom,England,York,53.959,-1.0815
+799,retiree,61,urban,4,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+800,working_professional,30,urban,2,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+801,student,21,suburban,2,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+802,working_professional,63,suburban,4,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+803,student,19,suburban,5,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+804,retiree,65,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+805,retiree,67,urban,2,True,False,United Kingdom,England,London,51.5074,-0.1278
+806,retiree,74,urban,1,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+807,working_professional,26,urban,4,False,False,United Kingdom,England,London,51.5074,-0.1278
+808,working_professional,24,urban,2,True,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+809,student,20,suburban,2,False,False,United Kingdom,England,Bath,51.3811,-2.359
+810,retiree,72,urban,1,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+811,stay_at_home,35,urban,3,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+812,retiree,77,urban,3,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+813,working_professional,18,urban,4,False,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+814,shift_worker,40,urban,2,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+815,working_professional,45,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+816,shift_worker,41,rural,3,True,False,United Kingdom,England,Truro,50.2632,-5.051
+817,retiree,78,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+818,student,43,urban,1,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+819,retiree,80,urban,1,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+820,retiree,67,urban,2,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+821,student,22,urban,4,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+822,student,53,urban,1,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+823,working_professional,38,rural,2,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+824,shift_worker,56,urban,5,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+825,retiree,70,urban,4,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+826,shift_worker,44,rural,5,False,False,United Kingdom,England,Truro,50.2632,-5.051
+827,retiree,68,urban,2,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+828,retiree,60,suburban,1,True,False,United Kingdom,England,Exeter,50.7184,-3.5339
+829,student,61,rural,2,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+830,working_professional,24,suburban,5,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+831,shift_worker,40,rural,4,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+832,student,39,urban,2,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+833,student,44,urban,3,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+834,retiree,77,urban,5,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+835,retiree,31,suburban,4,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+836,student,18,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+837,retiree,78,urban,5,True,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+838,student,58,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+839,retiree,69,suburban,5,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+840,retiree,69,suburban,5,True,False,United Kingdom,England,York,53.959,-1.0815
+841,stay_at_home,33,urban,5,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+842,shift_worker,58,urban,4,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+843,retiree,67,urban,4,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+844,working_professional,24,urban,4,True,True,United Kingdom,England,London,51.5074,-0.1278
+845,working_professional,21,urban,4,True,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+846,student,24,urban,1,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+847,shift_worker,64,suburban,2,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+848,working_professional,22,rural,4,True,True,United Kingdom,Wales,Bangor,53.227,-4.1294
+849,retiree,68,urban,2,False,False,United Kingdom,England,London,51.5074,-0.1278
+850,shift_worker,50,rural,3,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+851,working_professional,24,rural,2,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+852,retiree,34,urban,4,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+853,working_professional,19,urban,5,True,True,United Kingdom,England,Nottingham,52.9548,-1.1581
+854,shift_worker,29,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+855,working_professional,47,suburban,4,False,True,United Kingdom,England,York,53.959,-1.0815
+856,retiree,57,rural,2,False,False,United Kingdom,England,Truro,50.2632,-5.051
+857,working_professional,53,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+858,retiree,77,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+859,working_professional,22,rural,2,True,True,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+860,stay_at_home,44,suburban,4,True,False,United Kingdom,England,York,53.959,-1.0815
+861,retiree,77,urban,1,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+862,working_professional,47,urban,1,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+863,retiree,38,suburban,1,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+864,working_professional,50,suburban,3,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+865,retiree,39,suburban,2,True,False,United Kingdom,England,Bath,51.3811,-2.359
+866,working_professional,58,urban,4,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+867,working_professional,53,suburban,2,False,True,United Kingdom,England,Exeter,50.7184,-3.5339
+868,working_professional,61,urban,2,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+869,working_professional,65,rural,4,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+870,working_professional,19,suburban,5,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+871,working_professional,49,urban,1,False,True,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+872,stay_at_home,60,suburban,4,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+873,working_professional,44,urban,2,True,True,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+874,working_professional,30,suburban,4,True,False,United Kingdom,England,Bath,51.3811,-2.359
+875,student,21,urban,4,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+876,stay_at_home,40,suburban,4,False,False,United Kingdom,England,Bath,51.3811,-2.359
+877,stay_at_home,29,suburban,3,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+878,student,20,urban,2,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+879,shift_worker,53,suburban,1,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+880,retiree,73,urban,3,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+881,stay_at_home,62,suburban,1,False,False,United Kingdom,England,Bath,51.3811,-2.359
+882,retiree,75,urban,2,True,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+883,retiree,78,urban,2,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+884,student,27,urban,4,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+885,stay_at_home,62,suburban,4,False,False,United Kingdom,England,Oxford,51.752,-1.2577
+886,working_professional,51,rural,2,True,False,United Kingdom,England,Truro,50.2632,-5.051
+887,working_professional,18,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+888,student,54,suburban,4,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+889,stay_at_home,36,urban,3,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+890,student,24,urban,5,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+891,stay_at_home,38,urban,1,False,False,United Kingdom,England,London,51.5074,-0.1278
+892,retiree,72,suburban,5,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+893,retiree,78,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+894,retiree,27,urban,2,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+895,shift_worker,51,rural,1,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+896,student,27,urban,4,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+897,retiree,36,rural,2,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+898,working_professional,20,urban,5,False,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+899,retiree,77,urban,2,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+900,retiree,74,suburban,5,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+901,working_professional,19,urban,3,True,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+902,working_professional,52,urban,2,False,True,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+903,retiree,69,urban,3,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+904,retiree,49,rural,5,False,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+905,student,36,suburban,4,False,False,United Kingdom,England,Bath,51.3811,-2.359
+906,working_professional,55,urban,4,False,False,United Kingdom,England,London,51.5074,-0.1278
+907,stay_at_home,44,suburban,1,False,False,United Kingdom,England,Bath,51.3811,-2.359
+908,retiree,80,suburban,2,False,False,United Kingdom,England,Bath,51.3811,-2.359
+909,student,32,urban,4,False,False,United Kingdom,England,Manchester,53.4808,-2.2426
+910,working_professional,55,urban,4,True,True,United Kingdom,England,Liverpool,53.4084,-2.9916
+911,retiree,32,rural,2,True,False,United Kingdom,England,Truro,50.2632,-5.051
+912,working_professional,60,urban,3,False,True,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+913,working_professional,55,urban,3,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+914,retiree,69,urban,5,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+915,retiree,73,urban,2,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+916,retiree,72,urban,2,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+917,stay_at_home,38,rural,1,True,False,United Kingdom,England,Truro,50.2632,-5.051
+918,stay_at_home,57,urban,1,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+919,student,24,urban,1,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+920,retiree,38,urban,1,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+921,retiree,77,urban,2,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+922,shift_worker,30,urban,3,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+923,retiree,76,urban,4,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+924,retiree,27,suburban,4,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+925,student,23,urban,3,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+926,retiree,77,urban,1,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+927,working_professional,45,urban,5,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+928,shift_worker,27,urban,3,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+929,stay_at_home,27,urban,4,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+930,student,57,urban,2,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+931,stay_at_home,28,urban,2,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+932,working_professional,50,suburban,1,False,True,United Kingdom,England,Exeter,50.7184,-3.5339
+933,student,62,suburban,5,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+934,shift_worker,61,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+935,retiree,79,urban,5,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+936,retiree,28,urban,1,True,False,United Kingdom,England,Leicester,52.6369,-1.1398
+937,working_professional,25,urban,2,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+938,shift_worker,38,urban,3,False,False,United Kingdom,England,London,51.5074,-0.1278
+939,shift_worker,38,urban,4,True,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+940,student,30,urban,1,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+941,retiree,80,urban,5,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+942,working_professional,18,suburban,4,False,True,United Kingdom,England,York,53.959,-1.0815
+943,working_professional,23,urban,4,True,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+944,retiree,46,rural,5,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+945,retiree,47,suburban,3,False,False,United Kingdom,England,Bath,51.3811,-2.359
+946,student,49,rural,4,False,False,United Kingdom,England,Truro,50.2632,-5.051
+947,student,36,suburban,5,True,False,United Kingdom,England,Cambridge,52.2053,0.1218
+948,shift_worker,36,urban,5,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+949,stay_at_home,45,urban,2,False,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+950,stay_at_home,47,urban,5,False,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
+951,retiree,79,urban,5,False,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+952,retiree,66,rural,1,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+953,student,50,urban,5,True,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+954,working_professional,31,urban,4,False,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+955,retiree,26,urban,1,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+956,stay_at_home,48,urban,3,False,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+957,shift_worker,32,suburban,2,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+958,retiree,67,suburban,1,False,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+959,student,35,rural,2,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+960,student,20,urban,4,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+961,working_professional,18,rural,4,False,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+962,retiree,76,urban,4,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+963,stay_at_home,35,urban,2,False,False,United Kingdom,England,Birmingham,52.4862,-1.8904
+964,retiree,75,urban,1,False,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+965,student,24,rural,2,True,False,United Kingdom,England,Truro,50.2632,-5.051
+966,stay_at_home,31,urban,1,True,False,United Kingdom,England,Sheffield,53.3811,-1.4701
+967,working_professional,28,suburban,4,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+968,working_professional,46,urban,4,False,True,United Kingdom,England,Sheffield,53.3811,-1.4701
+969,shift_worker,56,urban,5,True,False,United Kingdom,England,Bristol,51.4545,-2.5879
+970,retiree,75,urban,5,True,False,United Kingdom,England,Leeds,53.8008,-1.5491
+971,working_professional,19,suburban,5,False,False,United Kingdom,England,Exeter,50.7184,-3.5339
+972,student,19,urban,4,False,False,United Kingdom,Northern Ireland,Belfast,54.5973,-5.9301
+973,retiree,77,urban,1,True,False,United Kingdom,England,Manchester,53.4808,-2.2426
+974,retiree,78,suburban,2,True,False,United Kingdom,England,Reading,51.4543,-0.9781
+975,stay_at_home,56,urban,2,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+976,student,59,urban,2,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+977,retiree,72,urban,2,False,False,United Kingdom,Northern Ireland,Derry,54.9979,-7.309
+978,retiree,35,suburban,5,False,False,United Kingdom,England,Bath,51.3811,-2.359
+979,student,46,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+980,student,61,suburban,1,False,False,United Kingdom,England,Cambridge,52.2053,0.1218
+981,retiree,30,urban,1,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+982,retiree,57,urban,4,False,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+983,stay_at_home,33,urban,3,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+984,shift_worker,57,urban,3,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+985,stay_at_home,51,urban,4,True,False,United Kingdom,Scotland,Aberdeen,57.1497,-2.0943
+986,retiree,72,urban,4,False,False,United Kingdom,England,Nottingham,52.9548,-1.1581
+987,student,19,urban,5,False,False,United Kingdom,England,Leicester,52.6369,-1.1398
+988,stay_at_home,57,suburban,1,True,False,United Kingdom,Scotland,Stirling,56.1165,-3.9369
+989,shift_worker,51,urban,4,True,False,United Kingdom,Wales,Swansea,51.6214,-3.9436
+990,working_professional,59,suburban,1,False,True,United Kingdom,England,Reading,51.4543,-0.9781
+991,shift_worker,63,urban,1,False,False,United Kingdom,England,Newcastle upon Tyne,54.9783,-1.6178
+992,retiree,79,rural,3,False,False,United Kingdom,England,Truro,50.2632,-5.051
+993,retiree,65,rural,1,True,False,United Kingdom,Scotland,Inverness,57.4778,-4.2247
+994,shift_worker,50,urban,4,False,False,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+995,retiree,37,urban,5,True,False,United Kingdom,England,Liverpool,53.4084,-2.9916
+996,stay_at_home,40,urban,1,True,False,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+997,retiree,75,rural,5,True,False,United Kingdom,Wales,Bangor,53.227,-4.1294
+998,student,45,suburban,1,True,False,United Kingdom,England,Oxford,51.752,-1.2577
+999,shift_worker,44,urban,2,False,False,United Kingdom,England,Leeds,53.8008,-1.5491
+1000,retiree,38,urban,3,True,False,United Kingdom,Scotland,Glasgow,55.8642,-4.2518
