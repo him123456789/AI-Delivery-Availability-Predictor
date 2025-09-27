@@ -64,6 +64,11 @@ The system uses ensemble machine learning techniques:
 └── README.md                   # This file
 ```
 
+## 🚀 Deploy
+
+- Streamlit Community Cloud: follow `DEPLOYMENT.md`.
+- Latest Release Notes: see [v1.0.0 Release](https://github.com/him123456789/AI-Delivery-Availability-Predictor/releases/tag/v1.0.0).
+
 ## 🛠️ Installation
 
 1. **Clone the repository**:

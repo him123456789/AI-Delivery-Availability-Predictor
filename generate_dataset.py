@@ -75,6 +75,37 @@ class DeliveryAvailabilityDatasetGenerator:
     def generate_customer_profiles(self) -> pd.DataFrame:
         """Generate customer profile data"""
         customers = []
+
+        # Curated sample of UK locations with approximate coordinates and urban classification
+        uk_locations = [
+            {"city": "London", "region": "England", "lat": 51.5074, "lon": -0.1278, "type": "urban"},
+            {"city": "Birmingham", "region": "England", "lat": 52.4862, "lon": -1.8904, "type": "urban"},
+            {"city": "Manchester", "region": "England", "lat": 53.4808, "lon": -2.2426, "type": "urban"},
+            {"city": "Leeds", "region": "England", "lat": 53.8008, "lon": -1.5491, "type": "urban"},
+            {"city": "Liverpool", "region": "England", "lat": 53.4084, "lon": -2.9916, "type": "urban"},
+            {"city": "Bristol", "region": "England", "lat": 51.4545, "lon": -2.5879, "type": "urban"},
+            {"city": "Sheffield", "region": "England", "lat": 53.3811, "lon": -1.4701, "type": "urban"},
+            {"city": "Newcastle upon Tyne", "region": "England", "lat": 54.9783, "lon": -1.6178, "type": "urban"},
+            {"city": "Nottingham", "region": "England", "lat": 52.9548, "lon": -1.1581, "type": "urban"},
+            {"city": "Leicester", "region": "England", "lat": 52.6369, "lon": -1.1398, "type": "urban"},
+            {"city": "Cardiff", "region": "Wales", "lat": 51.4816, "lon": -3.1791, "type": "urban"},
+            {"city": "Swansea", "region": "Wales", "lat": 51.6214, "lon": -3.9436, "type": "urban"},
+            {"city": "Edinburgh", "region": "Scotland", "lat": 55.9533, "lon": -3.1883, "type": "urban"},
+            {"city": "Glasgow", "region": "Scotland", "lat": 55.8642, "lon": -4.2518, "type": "urban"},
+            {"city": "Aberdeen", "region": "Scotland", "lat": 57.1497, "lon": -2.0943, "type": "urban"},
+            {"city": "Belfast", "region": "Northern Ireland", "lat": 54.5973, "lon": -5.9301, "type": "urban"},
+            {"city": "Derry", "region": "Northern Ireland", "lat": 54.9979, "lon": -7.3090, "type": "urban"},
+            {"city": "Cambridge", "region": "England", "lat": 52.2053, "lon": 0.1218, "type": "suburban"},
+            {"city": "Oxford", "region": "England", "lat": 51.7520, "lon": -1.2577, "type": "suburban"},
+            {"city": "Bath", "region": "England", "lat": 51.3811, "lon": -2.3590, "type": "suburban"},
+            {"city": "York", "region": "England", "lat": 53.9590, "lon": -1.0815, "type": "suburban"},
+            {"city": "Exeter", "region": "England", "lat": 50.7184, "lon": -3.5339, "type": "suburban"},
+            {"city": "Inverness", "region": "Scotland", "lat": 57.4778, "lon": -4.2247, "type": "rural"},
+            {"city": "Truro", "region": "England", "lat": 50.2632, "lon": -5.0510, "type": "rural"},
+            {"city": "Bangor", "region": "Wales", "lat": 53.2270, "lon": -4.1294, "type": "rural"},
+            {"city": "Stirling", "region": "Scotland", "lat": 56.1165, "lon": -3.9369, "type": "suburban"},
+            {"city": "Reading", "region": "England", "lat": 51.4543, "lon": -0.9781, "type": "suburban"},
+        ]
         
         for customer_id in range(1, self.num_customers + 1):
             profile_type = random.choice(list(self.customer_profiles.keys()))
@@ -86,14 +117,20 @@ class DeliveryAvailabilityDatasetGenerator:
             elif age > 65:
                 profile_type = 'retiree'
             
+            loc = random.choice(uk_locations)
             customers.append({
                 'customer_id': customer_id,
                 'profile_type': profile_type,
                 'age': age,
-                'location_type': random.choice(['urban', 'suburban', 'rural']),
+                'location_type': loc['type'],
                 'household_size': random.randint(1, 5),
                 'has_pets': random.choice([True, False]),
-                'work_from_home': random.choice([True, False]) if profile_type == 'working_professional' else False
+                'work_from_home': random.choice([True, False]) if profile_type == 'working_professional' else False,
+                'country': 'United Kingdom',
+                'region': loc['region'],
+                'city': loc['city'],
+                'latitude': loc['lat'],
+                'longitude': loc['lon'],
             })
         
         return pd.DataFrame(customers)

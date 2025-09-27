@@ -16,3 +16,8 @@ gatherUsageStats = false
 base = "light"
 primaryColor = "#1f77b4"
 font = "sans serif"
+
+
+OPENWEATHER_API_KEY = "78d8e1d518d114f29b736543e54628d8"
+WEATHERAPI_KEY = "your_weatherapi_key"
+WEATHER_CACHE_TTL = 600
